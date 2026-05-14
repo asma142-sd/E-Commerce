@@ -18,7 +18,7 @@ public class Home extends javax.swing.JFrame {
     public Home() {
         initComponents();
         // This line tells the Label in your header to show the name
-//        jLabelUsericon.setText(nameFromSignUp);
+        //jLabelUsericon.setText(nameFromSignUp);
     }
 
     /**
