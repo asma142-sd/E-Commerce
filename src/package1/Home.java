@@ -11,7 +11,7 @@ package package1;
 public class Home extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Home.class.getName());
-
+    
     /**
      * Creates new form Home
      */
@@ -43,10 +43,56 @@ public class Home extends javax.swing.JFrame {
         jButtonbeautyItems = new javax.swing.JButton();
         jButtonfoodItems = new javax.swing.JButton();
         jButtonbooks = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jPanel3 = new javax.swing.JPanel();
+        jPanelproducts = new javax.swing.JPanel();
+        jLabelhomeappliances = new javax.swing.JLabel();
+        jPanelLED = new javax.swing.JPanel();
+        jLabelledTV = new javax.swing.JLabel();
+        jLabelTVname = new javax.swing.JLabel();
+        jLabelTVprice = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jSpinner1 = new javax.swing.JSpinner();
+        jButtonTVCart = new javax.swing.JButton();
+        jPanel6Dispenser = new javax.swing.JPanel();
+        jLabeldispenser = new javax.swing.JLabel();
+        jLabeldispenserName = new javax.swing.JLabel();
+        jLabelDispenserprice = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jSpinner2 = new javax.swing.JSpinner();
+        jButtonDispernserCart = new javax.swing.JButton();
+        jPanelOven = new javax.swing.JPanel();
+        jLabel8oven = new javax.swing.JLabel();
+        jLabelovenName = new javax.swing.JLabel();
+        jLabelOvenprice = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jSpinner3 = new javax.swing.JSpinner();
+        jButtonOvenCart = new javax.swing.JButton();
+        jPanelToaster = new javax.swing.JPanel();
+        jLabeltoaster = new javax.swing.JLabel();
+        jLabeltoasterName = new javax.swing.JLabel();
+        jLabelToasterprice = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jSpinner4 = new javax.swing.JSpinner();
+        jButton4ToasterCart = new javax.swing.JButton();
+        jPanelJuicer = new javax.swing.JPanel();
+        jLabel16juicer = new javax.swing.JLabel();
+        jLabeljuicerName = new javax.swing.JLabel();
+        jLabelJuicerprice = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jSpinner5 = new javax.swing.JSpinner();
+        jButtonJuicerCart = new javax.swing.JButton();
+        jPanelAirfryer = new javax.swing.JPanel();
+        jLabel20airfryer = new javax.swing.JLabel();
+        jLabelairfryerName = new javax.swing.JLabel();
+        jLabelAirfryerprice = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jSpinner6 = new javax.swing.JSpinner();
+        jButtonAirfryerCart = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ordify");
-        setPreferredSize(new java.awt.Dimension(1150, 700));
+        setPreferredSize(new java.awt.Dimension(1150, 1200));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -96,7 +142,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButtonCart)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabelUsericon)
@@ -136,7 +182,7 @@ public class Home extends javax.swing.JFrame {
 
         jButtonhomeApplainces.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jButtonhomeApplainces.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonhomeApplainces.setText("Home Applainces");
+        jButtonhomeApplainces.setText("Home Appliances");
         jButtonhomeApplainces.setBorder(null);
         jButtonhomeApplainces.setContentAreaFilled(false);
         jButtonhomeApplainces.setFocusPainted(false);
@@ -199,8 +245,470 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jButtonfoodItems)
                 .addGap(18, 18, 18)
                 .addComponent(jButtonbooks)
-                .addContainerGap(444, Short.MAX_VALUE))
+                .addContainerGap(955, Short.MAX_VALUE))
         );
+
+        jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane2.setBorder(null);
+
+        jPanelproducts.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelproducts.setPreferredSize(new java.awt.Dimension(907, 800));
+
+        jLabelhomeappliances.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelhomeappliances.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelhomeappliances.setText("Home Appliances");
+
+        jPanelLED.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelLED.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelledTV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/ledTV (3).png"))); // NOI18N
+        jLabelledTV.setText("    ");
+
+        jLabelTVname.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelTVname.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelTVname.setText("TCL 65 Inches QLED Google Smart TV With AiPQ Processor");
+
+        jLabelTVprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelTVprice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelTVprice.setText("Rs. 214,095");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("Quantity");
+
+        jButtonTVCart.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonTVCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonTVCart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonTVCart.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelLEDLayout = new javax.swing.GroupLayout(jPanelLED);
+        jPanelLED.setLayout(jPanelLEDLayout);
+        jPanelLEDLayout.setHorizontalGroup(
+            jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelLEDLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabelledTV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(93, 93, 93))
+            .addGroup(jPanelLEDLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelLEDLayout.createSequentialGroup()
+                        .addComponent(jLabelTVprice)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanelLEDLayout.createSequentialGroup()
+                        .addComponent(jLabelTVname)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelLEDLayout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonTVCart)
+                        .addGap(47, 47, 47))))
+        );
+        jPanelLEDLayout.setVerticalGroup(
+            jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelLEDLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabelledTV)
+                .addGap(36, 36, 36)
+                .addComponent(jLabelTVname, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelTVprice)
+                .addGap(24, 24, 24)
+                .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonTVCart))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel6Dispenser.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6Dispenser.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabeldispenser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/waterDispenser (6).png"))); // NOI18N
+        jLabeldispenser.setText("    ");
+
+        jLabeldispenserName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabeldispenserName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabeldispenserName.setText("Panasonic Water Dispenser, Stainless Steel ");
+
+        jLabelDispenserprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelDispenserprice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelDispenserprice.setText("Rs. 65,000");
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setText("Quantity");
+
+        jButtonDispernserCart.setBackground(new java.awt.Color(179, 48, 75)
+        );
+        jButtonDispernserCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonDispernserCart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonDispernserCart.setText("Add to Cart");
+        jButtonDispernserCart.addActionListener(this::jButtonDispernserCartActionPerformed);
+
+        javax.swing.GroupLayout jPanel6DispenserLayout = new javax.swing.GroupLayout(jPanel6Dispenser);
+        jPanel6Dispenser.setLayout(jPanel6DispenserLayout);
+        jPanel6DispenserLayout.setHorizontalGroup(
+            jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6DispenserLayout.createSequentialGroup()
+                .addGroup(jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6DispenserLayout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(jLabeldispenser, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6DispenserLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelDispenserprice)
+                            .addGroup(jPanel6DispenserLayout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonDispernserCart)))))
+                .addGap(35, 35, 35))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6DispenserLayout.createSequentialGroup()
+                .addContainerGap(57, Short.MAX_VALUE)
+                .addComponent(jLabeldispenserName, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(73, 73, 73))
+        );
+        jPanel6DispenserLayout.setVerticalGroup(
+            jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6DispenserLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabeldispenser, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabeldispenserName)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelDispenserprice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonDispernserCart))
+                .addContainerGap(57, Short.MAX_VALUE))
+        );
+
+        jPanelOven.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelOven.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabel8oven.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Oven (1).png"))); // NOI18N
+        jLabel8oven.setText("     ");
+
+        jLabelovenName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelovenName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelovenName.setText("Anex Deluxe Oven Toaster1600W, 52 Liters, Black & Silver");
+
+        jLabelOvenprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelOvenprice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelOvenprice.setText("Rs. 31,620 ");
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel11.setText("Quantity: ");
+
+        jButtonOvenCart.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonOvenCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonOvenCart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonOvenCart.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelOvenLayout = new javax.swing.GroupLayout(jPanelOven);
+        jPanelOven.setLayout(jPanelOvenLayout);
+        jPanelOvenLayout.setHorizontalGroup(
+            jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOvenLayout.createSequentialGroup()
+                .addGroup(jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelOvenLayout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(jLabel8oven, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelOvenLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabelovenName)
+                            .addComponent(jLabelOvenprice)
+                            .addGroup(jPanelOvenLayout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonOvenCart)
+                                .addGap(21, 21, 21)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanelOvenLayout.setVerticalGroup(
+            jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOvenLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel8oven, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelovenName)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelOvenprice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonOvenCart))
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+
+        jPanelToaster.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelToaster.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabeltoaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/toaster (1).png"))); // NOI18N
+        jLabeltoaster.setText("     ");
+
+        jLabeltoasterName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabeltoasterName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabeltoasterName.setText("Anex Deluxe 2 Slice Toaster,730-870 W, 220-240V, Black");
+
+        jLabelToasterprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelToasterprice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelToasterprice.setText("Rs. 8,288");
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel15.setText("Quantity:");
+
+        jButton4ToasterCart.setBackground(new java.awt.Color(179, 48, 75)
+        );
+        jButton4ToasterCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButton4ToasterCart.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4ToasterCart.setText("Add to Cart");
+        jButton4ToasterCart.addActionListener(this::jButton4ToasterCartActionPerformed);
+
+        javax.swing.GroupLayout jPanelToasterLayout = new javax.swing.GroupLayout(jPanelToaster);
+        jPanelToaster.setLayout(jPanelToasterLayout);
+        jPanelToasterLayout.setHorizontalGroup(
+            jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelToasterLayout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addComponent(jLabeltoaster, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelToasterLayout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
+                .addGroup(jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabeltoasterName)
+                    .addGroup(jPanelToasterLayout.createSequentialGroup()
+                        .addGroup(jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabelToasterprice, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton4ToasterCart)))
+                .addGap(29, 29, 29))
+        );
+        jPanelToasterLayout.setVerticalGroup(
+            jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelToasterLayout.createSequentialGroup()
+                .addComponent(jLabeltoaster, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(jLabeltoasterName)
+                .addGap(12, 12, 12)
+                .addComponent(jLabelToasterprice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4ToasterCart))
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        jPanelJuicer.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelJuicer.setMinimumSize(new java.awt.Dimension(400, 300));
+        jPanelJuicer.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabel16juicer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/juicer (1).png"))); // NOI18N
+        jLabel16juicer.setText("    ");
+
+        jLabeljuicerName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabeljuicerName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabeljuicerName.setText("Anex Deluxe Juicer, 400W, 220-240V, 800ml, Black");
+
+        jLabelJuicerprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelJuicerprice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelJuicerprice.setText("Rs. 13,983 ");
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel19.setText("Quantity:");
+
+        jButtonJuicerCart.setBackground(new java.awt.Color(179, 48, 75)
+        );
+        jButtonJuicerCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonJuicerCart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonJuicerCart.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelJuicerLayout = new javax.swing.GroupLayout(jPanelJuicer);
+        jPanelJuicer.setLayout(jPanelJuicerLayout);
+        jPanelJuicerLayout.setHorizontalGroup(
+            jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJuicerLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel16juicer, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(88, 88, 88))
+            .addGroup(jPanelJuicerLayout.createSequentialGroup()
+                .addGroup(jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelJuicerLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jLabeljuicerName))
+                    .addGroup(jPanelJuicerLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelJuicerprice)
+                            .addGroup(jPanelJuicerLayout.createSequentialGroup()
+                                .addComponent(jLabel19)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
+                                .addComponent(jButtonJuicerCart)))))
+                .addGap(33, 33, 33))
+        );
+        jPanelJuicerLayout.setVerticalGroup(
+            jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelJuicerLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel16juicer, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabeljuicerName)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelJuicerprice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonJuicerCart))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanelAirfryer.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelAirfryer.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabel20airfryer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/airfryer (1).png"))); // NOI18N
+        jLabel20airfryer.setText("    ");
+
+        jLabelairfryerName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelairfryerName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelairfryerName.setText("Nutricook Air Fryer Slim, 1500W, 5-Liters");
+
+        jLabelAirfryerprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabelAirfryerprice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelAirfryerprice.setText("Rs. 63,999");
+
+        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel23.setText("Quantity:");
+
+        jButtonAirfryerCart.setBackground(new java.awt.Color(179, 48, 75)
+        );
+        jButtonAirfryerCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAirfryerCart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAirfryerCart.setText("Add to Cart");
+        jButtonAirfryerCart.addActionListener(this::jButtonAirfryerCartActionPerformed);
+
+        javax.swing.GroupLayout jPanelAirfryerLayout = new javax.swing.GroupLayout(jPanelAirfryer);
+        jPanelAirfryer.setLayout(jPanelAirfryerLayout);
+        jPanelAirfryerLayout.setHorizontalGroup(
+            jPanelAirfryerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelAirfryerLayout.createSequentialGroup()
+                .addGap(108, 108, 108)
+                .addComponent(jLabel20airfryer, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(115, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelAirfryerLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelairfryerName)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanelAirfryerLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(jPanelAirfryerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelAirfryerLayout.createSequentialGroup()
+                        .addComponent(jLabelAirfryerprice)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelAirfryerLayout.createSequentialGroup()
+                        .addComponent(jLabel23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonAirfryerCart)
+                        .addGap(38, 38, 38))))
+        );
+        jPanelAirfryerLayout.setVerticalGroup(
+            jPanelAirfryerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelAirfryerLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel20airfryer)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelairfryerName)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelAirfryerprice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelAirfryerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAirfryerCart))
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanelproductsLayout = new javax.swing.GroupLayout(jPanelproducts);
+        jPanelproducts.setLayout(jPanelproductsLayout);
+        jPanelproductsLayout.setHorizontalGroup(
+            jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelproductsLayout.createSequentialGroup()
+                .addGap(373, 373, 373)
+                .addComponent(jLabelhomeappliances)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanelproductsLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jPanelOven, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
+                        .addComponent(jPanelLED, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE))
+                    .addComponent(jPanelJuicer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelToaster, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6Dispenser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelAirfryer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32))
+        );
+        jPanelproductsLayout.setVerticalGroup(
+            jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelproductsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelhomeappliances)
+                .addGap(18, 18, 18)
+                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel6Dispenser, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE)
+                    .addComponent(jPanelLED, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelOven, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelToaster, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(43, 43, 43)
+                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelJuicer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanelAirfryer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jPanelproducts, javax.swing.GroupLayout.PREFERRED_SIZE, 945, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 25, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jPanelproducts, javax.swing.GroupLayout.PREFERRED_SIZE, 1110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 319, Short.MAX_VALUE))
+        );
+
+        jScrollPane2.setViewportView(jPanel3);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -208,15 +716,21 @@ public class Home extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 946, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1150, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -227,7 +741,9 @@ public class Home extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -248,6 +764,18 @@ public class Home extends javax.swing.JFrame {
     private void jButtonfoodItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonfoodItemsActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonfoodItemsActionPerformed
+
+    private void jButtonDispernserCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDispernserCartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonDispernserCartActionPerformed
+
+    private void jButton4ToasterCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ToasterCartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ToasterCartActionPerformed
+
+    private void jButtonAirfryerCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAirfryerCartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAirfryerCartActionPerformed
 
     /**
      * @param args the command line arguments
@@ -275,20 +803,66 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton4ToasterCart;
+    private javax.swing.JButton jButtonAirfryerCart;
     private javax.swing.JButton jButtonCart;
+    private javax.swing.JButton jButtonDispernserCart;
+    private javax.swing.JButton jButtonJuicerCart;
+    private javax.swing.JButton jButtonOvenCart;
     private javax.swing.JButton jButtonSearch;
+    private javax.swing.JButton jButtonTVCart;
     private javax.swing.JButton jButtonbeautyItems;
     private javax.swing.JButton jButtonbooks;
     private javax.swing.JButton jButtonfoodItems;
     private javax.swing.JButton jButtonhomeApplainces;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16juicer;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20airfryer;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel2UserName;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8oven;
+    private javax.swing.JLabel jLabelAirfryerprice;
     private javax.swing.JLabel jLabelCategories;
+    private javax.swing.JLabel jLabelDispenserprice;
+    private javax.swing.JLabel jLabelJuicerprice;
+    private javax.swing.JLabel jLabelOvenprice;
+    private javax.swing.JLabel jLabelTVname;
+    private javax.swing.JLabel jLabelTVprice;
+    private javax.swing.JLabel jLabelToasterprice;
     private javax.swing.JLabel jLabelUsericon;
+    private javax.swing.JLabel jLabelairfryerName;
+    private javax.swing.JLabel jLabeldispenser;
+    private javax.swing.JLabel jLabeldispenserName;
+    private javax.swing.JLabel jLabelhomeappliances;
+    private javax.swing.JLabel jLabeljuicerName;
+    private javax.swing.JLabel jLabelledTV;
     private javax.swing.JLabel jLabelmenubarIcon;
     private javax.swing.JLabel jLabelordifyLogo;
+    private javax.swing.JLabel jLabelovenName;
+    private javax.swing.JLabel jLabeltoaster;
+    private javax.swing.JLabel jLabeltoasterName;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel6Dispenser;
+    private javax.swing.JPanel jPanelAirfryer;
+    private javax.swing.JPanel jPanelJuicer;
+    private javax.swing.JPanel jPanelLED;
+    private javax.swing.JPanel jPanelOven;
+    private javax.swing.JPanel jPanelToaster;
+    private javax.swing.JPanel jPanelproducts;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner2;
+    private javax.swing.JSpinner jSpinner3;
+    private javax.swing.JSpinner jSpinner4;
+    private javax.swing.JSpinner jSpinner5;
+    private javax.swing.JSpinner jSpinner6;
     private javax.swing.JTextField txtSearchbar;
     // End of variables declaration//GEN-END:variables
 }
