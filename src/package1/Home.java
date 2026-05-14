@@ -55,11 +55,9 @@ public class Home extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(1000, 56));
 
         jLabelordifyLogo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabelordifyLogo.setForeground(new java.awt.Color(0, 0, 0));
         jLabelordifyLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/32 logo.png"))); // NOI18N
         jLabelordifyLogo.setText("Ordify");
 
-        txtSearchbar.setBackground(new java.awt.Color(255, 255, 255));
         txtSearchbar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
         txtSearchbar.setPreferredSize(new java.awt.Dimension(64, 20));
         txtSearchbar.addActionListener(this::txtSearchbarActionPerformed);
@@ -72,7 +70,6 @@ public class Home extends javax.swing.JFrame {
         jButtonSearch.setFocusPainted(false);
 
         jButtonCart.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButtonCart.setForeground(new java.awt.Color(0, 0, 0));
         jButtonCart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/cart32.png"))); // NOI18N
         jButtonCart.setText("Cart");
         jButtonCart.setBorder(null);
@@ -82,7 +79,6 @@ public class Home extends javax.swing.JFrame {
 
         jLabelUsericon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/user.png"))); // NOI18N
 
-        jLabel2UserName.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2UserName.setPreferredSize(new java.awt.Dimension(66, 16));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

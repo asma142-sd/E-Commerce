@@ -3,6 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package package1;
+import database.DBConnection;
+import java.awt.HeadlessException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Asma Saeed
@@ -39,14 +45,14 @@ public class SignUp extends javax.swing.JFrame {
         jLabelphone = new javax.swing.JLabel();
         jLabelPassword = new javax.swing.JLabel();
         jLabelConfirmPass = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        nameField = new javax.swing.JTextField();
         emailField = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        passwordField = new javax.swing.JTextField();
-        passwordField2 = new javax.swing.JTextField();
-        jButtonSignup2 = new javax.swing.JButton();
-        jCheckBoxNotaRobot = new javax.swing.JCheckBox();
+        countryField = new javax.swing.JTextField();
+        phoneField = new javax.swing.JTextField();
+        signupBtn = new javax.swing.JButton();
+        robotCheckBox = new javax.swing.JCheckBox();
+        passwordField = new javax.swing.JPasswordField();
+        confirmPasswordField = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -126,37 +132,28 @@ public class SignUp extends javax.swing.JFrame {
         jLabelConfirmPass.setForeground(new java.awt.Color(179, 48, 75));
         jLabelConfirmPass.setText("Confirm Password");
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        nameField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        nameField.addActionListener(this::nameFieldActionPerformed);
 
-        emailField.setBackground(new java.awt.Color(255, 255, 255));
         emailField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
         emailField.addActionListener(this::emailFieldActionPerformed);
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        countryField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
 
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        jTextField4.addActionListener(this::jTextField4ActionPerformed);
+        phoneField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        phoneField.addActionListener(this::phoneFieldActionPerformed);
 
-        passwordField.setBackground(new java.awt.Color(255, 255, 255));
-        passwordField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        passwordField.addActionListener(this::passwordFieldActionPerformed);
+        signupBtn.setBackground(new java.awt.Color(179, 48, 75));
+        signupBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signupBtn.setForeground(new java.awt.Color(255, 255, 255));
+        signupBtn.setText("Sign Up");
+        signupBtn.addActionListener(this::signupBtnActionPerformed);
 
-        passwordField2.setBackground(new java.awt.Color(255, 255, 255));
-        passwordField2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        passwordField2.addActionListener(this::passwordField2ActionPerformed);
+        robotCheckBox.setText("I'm not a robot");
 
-        jButtonSignup2.setBackground(new java.awt.Color(179, 48, 75));
-        jButtonSignup2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButtonSignup2.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonSignup2.setText("Sign Up");
-        jButtonSignup2.addActionListener(this::jButtonSignup2ActionPerformed);
+        passwordField.setText("jPasswordField1");
 
-        jCheckBoxNotaRobot.setForeground(new java.awt.Color(0, 0, 0));
-        jCheckBoxNotaRobot.setText("I'm not a robot");
+        confirmPasswordField.setText("jPasswordField2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -165,28 +162,27 @@ public class SignUp extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(signupBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(jLabel1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(157, 157, 157)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabelemail)
                             .addComponent(jLabelName, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabelphone)
                             .addComponent(jLabelPassword)
                             .addComponent(jLabelConfirmPass)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(passwordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(passwordField, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabelcountry, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jCheckBoxNotaRobot)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(225, 225, 225)
-                        .addComponent(jButtonSignup2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addComponent(jLabel1)))
+                            .addComponent(nameField, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
+                            .addComponent(emailField, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
+                            .addComponent(countryField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
+                            .addComponent(phoneField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabelcountry, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(robotCheckBox)
+                            .addComponent(passwordField)
+                            .addComponent(confirmPasswordField))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -198,7 +194,7 @@ public class SignUp extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addComponent(jLabelName)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelemail)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -206,23 +202,23 @@ public class SignUp extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabelcountry)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(countryField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelphone)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(phoneField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabelPassword)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(8, 8, 8)
                 .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabelConfirmPass)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(passwordField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBoxNotaRobot)
+                .addComponent(confirmPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(robotCheckBox)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonSignup2)
+                .addComponent(signupBtn)
                 .addContainerGap(64, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -241,29 +237,105 @@ public class SignUp extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void phoneFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_phoneFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_phoneFieldActionPerformed
 
-    private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
+    private void nameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_passwordFieldActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_nameFieldActionPerformed
 
     private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_emailFieldActionPerformed
 
-    private void jButtonSignup2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSignup2ActionPerformed
+    private void signupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonSignup2ActionPerformed
 
-    private void passwordField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_passwordField2ActionPerformed
+    if(nameField.getText().isEmpty()
+    || emailField.getText().isEmpty()
+    || countryField.getText().isEmpty()
+    || phoneField.getText().isEmpty()
+    || String.valueOf(passwordField.getPassword()).isEmpty()
+    || String.valueOf(confirmPasswordField.getPassword()).isEmpty()) {
+
+        JOptionPane.showMessageDialog(
+        this,
+        "Please fill all fields");
+
+        return;
+    }
+
+    if(!robotCheckBox.isSelected()) {
+
+        JOptionPane.showMessageDialog(
+        this,
+        "Please confirm you are not a robot");
+
+        return;
+    }
+
+    String password =
+    String.valueOf(passwordField.getPassword());
+
+    String confirmPassword =
+    String.valueOf(confirmPasswordField.getPassword());
+
+    if(!password.equals(confirmPassword)) {
+
+        JOptionPane.showMessageDialog(
+        this,
+        "Passwords do not match");
+
+        return;
+    }
+
+    try {
+
+        Connection con =
+        DBConnection.getConnection();
+
+        String sql =
+        "INSERT INTO users(username,email,country,phone,password,role) VALUES(?,?,?,?,?,?)";
+
+        PreparedStatement pst =
+        con.prepareStatement(sql);
+
+        pst.setString(1,
+        nameField.getText());
+
+        pst.setString(2,
+        emailField.getText());
+
+        pst.setString(3,
+        countryField.getText());
+
+        pst.setString(4,
+        phoneField.getText());
+
+        pst.setString(5,
+        password);
+
+        pst.setString(6,
+        "CUSTOMER");
+
+        pst.executeUpdate();
+
+        JOptionPane.showMessageDialog(
+        this,
+        "Registration Successful");
+
+        new Login().setVisible(true);
+
+        dispose();
+
+    } catch(HeadlessException | SQLException e) {
+
+        JOptionPane.showMessageDialog(
+        this,
+        e);
+    }
+    }//GEN-LAST:event_signupBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -291,9 +363,9 @@ public class SignUp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField confirmPasswordField;
+    private javax.swing.JTextField countryField;
     private javax.swing.JTextField emailField;
-    private javax.swing.JButton jButtonSignup2;
-    private javax.swing.JCheckBox jCheckBoxNotaRobot;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4Description;
     private javax.swing.JLabel jLabelConfirmPass;
@@ -306,10 +378,10 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelphone;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField passwordField;
-    private javax.swing.JTextField passwordField2;
+    private javax.swing.JTextField nameField;
+    private javax.swing.JPasswordField passwordField;
+    private javax.swing.JTextField phoneField;
+    private javax.swing.JCheckBox robotCheckBox;
+    private javax.swing.JButton signupBtn;
     // End of variables declaration//GEN-END:variables
 }
