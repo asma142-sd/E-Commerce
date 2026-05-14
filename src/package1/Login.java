@@ -44,8 +44,8 @@ public class Login extends javax.swing.JFrame {
         jLabelLogin = new javax.swing.JLabel();
         Emaillabel = new javax.swing.JLabel();
         PasswordLabel = new javax.swing.JLabel();
-        txtEmail = new javax.swing.JTextField();
-        txtPassword = new javax.swing.JTextField();
+        emailField = new javax.swing.JTextField();
+        passwordField = new javax.swing.JTextField();
         jButtonLogin = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButtonSignup1 = new javax.swing.JButton();
@@ -138,13 +138,13 @@ public class Login extends javax.swing.JFrame {
         PasswordLabel.setForeground(new java.awt.Color(0, 0, 0));
         PasswordLabel.setText("Password");
 
-        txtEmail.setBackground(new java.awt.Color(255, 255, 255));
-        txtEmail.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtEmail.addActionListener(this::txtEmailActionPerformed);
+        emailField.setBackground(new java.awt.Color(255, 255, 255));
+        emailField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        emailField.addActionListener(this::emailFieldActionPerformed);
 
-        txtPassword.setBackground(new java.awt.Color(255, 255, 255));
-        txtPassword.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtPassword.addActionListener(this::txtPasswordActionPerformed);
+        passwordField.setBackground(new java.awt.Color(255, 255, 255));
+        passwordField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        passwordField.addActionListener(this::passwordFieldActionPerformed);
 
         jButtonLogin.setBackground(new java.awt.Color(179, 48, 75));
         jButtonLogin.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -176,10 +176,10 @@ public class Login extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(88, 88, 88)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
+                            .addComponent(emailField, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
                             .addComponent(Emaillabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(PasswordLabel)
-                            .addComponent(txtPassword)
+                            .addComponent(passwordField)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -199,11 +199,11 @@ public class Login extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addComponent(Emaillabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addComponent(PasswordLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButtonLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -228,13 +228,13 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
+    private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmailActionPerformed
+    }//GEN-LAST:event_emailFieldActionPerformed
 
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+    private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
+    }//GEN-LAST:event_passwordFieldActionPerformed
 
     private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLoginActionPerformed
         // TODO add your handling code here:
@@ -272,6 +272,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Emaillabel;
     private javax.swing.JLabel PasswordLabel;
+    private javax.swing.JTextField emailField;
     private javax.swing.JButton jButtonLogin;
     private javax.swing.JButton jButtonSignup1;
     private javax.swing.JLabel jLabel2;
@@ -289,7 +290,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtPassword;
+    private javax.swing.JTextField passwordField;
     // End of variables declaration//GEN-END:variables
 }

@@ -17,8 +17,6 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
-        // This line tells the Label in your header to show the name
-        //jLabelUsericon.setText(nameFromSignUp);
     }
 
     /**
@@ -32,29 +30,38 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabelordifyLogo = new javax.swing.JLabel();
         txtSearchbar = new javax.swing.JTextField();
         jButtonSearch = new javax.swing.JButton();
         jButtonCart = new javax.swing.JButton();
         jLabelUsericon = new javax.swing.JLabel();
         jLabel2UserName = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabelmenubarIcon = new javax.swing.JLabel();
+        jLabelCategories = new javax.swing.JLabel();
+        jButtonhomeApplainces = new javax.swing.JButton();
+        jButtonbeautyItems = new javax.swing.JButton();
+        jButtonfoodItems = new javax.swing.JButton();
+        jButtonbooks = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ordify");
+        setPreferredSize(new java.awt.Dimension(1150, 700));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(179, 48, 75));
         jPanel2.setForeground(new java.awt.Color(255, 102, 102));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1000, 56));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/32 logo.png"))); // NOI18N
-        jLabel1.setText("Ordify");
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/menu4.png"))); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabelordifyLogo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabelordifyLogo.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelordifyLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/32 logo.png"))); // NOI18N
+        jLabelordifyLogo.setText("Ordify");
 
         txtSearchbar.setBackground(new java.awt.Color(255, 255, 255));
+        txtSearchbar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
+        txtSearchbar.setPreferredSize(new java.awt.Dimension(64, 20));
         txtSearchbar.addActionListener(this::txtSearchbarActionPerformed);
 
         jButtonSearch.setBackground(new java.awt.Color(179, 48, 75));
@@ -84,16 +91,14 @@ public class Home extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(297, 297, 297)
-                .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelordifyLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(321, 321, 321)
+                .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
                 .addComponent(jButtonCart)
-                .addGap(26, 26, 26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabelUsericon)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -104,31 +109,114 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel3)
-                            .addComponent(jButtonSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelUsericon, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonCart, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addComponent(jLabel2UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                        .addComponent(jLabel2UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabelUsericon, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabelordifyLogo)
+                                    .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jButtonCart, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(3, 3, 3)
+                                .addComponent(jButtonSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
+
+        jLabelmenubarIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/menu32.png"))); // NOI18N
+
+        jLabelCategories.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelCategories.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelCategories.setText("Categories");
+
+        jButtonhomeApplainces.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonhomeApplainces.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonhomeApplainces.setText("Home Applainces");
+        jButtonhomeApplainces.setBorder(null);
+        jButtonhomeApplainces.setContentAreaFilled(false);
+        jButtonhomeApplainces.setFocusPainted(false);
+
+        jButtonbeautyItems.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonbeautyItems.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonbeautyItems.setText("Beauty Products");
+        jButtonbeautyItems.setBorder(null);
+        jButtonbeautyItems.setContentAreaFilled(false);
+        jButtonbeautyItems.setFocusPainted(false);
+        jButtonbeautyItems.addActionListener(this::jButtonbeautyItemsActionPerformed);
+
+        jButtonfoodItems.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonfoodItems.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonfoodItems.setText("Food Items");
+        jButtonfoodItems.setBorder(null);
+        jButtonfoodItems.setContentAreaFilled(false);
+        jButtonfoodItems.setFocusPainted(false);
+        jButtonfoodItems.addActionListener(this::jButtonfoodItemsActionPerformed);
+
+        jButtonbooks.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonbooks.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonbooks.setText("Books");
+        jButtonbooks.setBorder(null);
+        jButtonbooks.setContentAreaFilled(false);
+        jButtonbooks.setFocusPainted(false);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(jLabelmenubarIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabelCategories))
+                    .addComponent(jButtonhomeApplainces)
+                    .addComponent(jButtonbeautyItems)
+                    .addComponent(jButtonfoodItems)
+                    .addComponent(jButtonbooks))
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabelmenubarIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(jLabelCategories)))
+                .addGap(18, 18, 18)
+                .addComponent(jButtonhomeApplainces)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonbeautyItems)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonfoodItems)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonbooks)
+                .addContainerGap(444, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1150, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 619, Short.MAX_VALUE))
+                .addGap(0, 0, 0)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -152,6 +240,14 @@ public class Home extends javax.swing.JFrame {
     private void jButtonCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCartActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCartActionPerformed
+
+    private void jButtonbeautyItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonbeautyItemsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonbeautyItemsActionPerformed
+
+    private void jButtonfoodItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonfoodItemsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonfoodItemsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -181,12 +277,18 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonCart;
     private javax.swing.JButton jButtonSearch;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButtonbeautyItems;
+    private javax.swing.JButton jButtonbooks;
+    private javax.swing.JButton jButtonfoodItems;
+    private javax.swing.JButton jButtonhomeApplainces;
     private javax.swing.JLabel jLabel2UserName;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabelCategories;
     private javax.swing.JLabel jLabelUsericon;
+    private javax.swing.JLabel jLabelmenubarIcon;
+    private javax.swing.JLabel jLabelordifyLogo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JTextField txtSearchbar;
     // End of variables declaration//GEN-END:variables
 }
