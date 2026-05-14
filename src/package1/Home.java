@@ -17,6 +17,8 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
+        // This line tells the Label in your header to show the name
+//        jLabelUsericon.setText(nameFromSignUp);
     }
 
     /**
@@ -33,20 +35,48 @@ public class Home extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         txtSearchbar = new javax.swing.JTextField();
+        jButtonSearch = new javax.swing.JButton();
+        jButtonCart = new javax.swing.JButton();
+        jLabelUsericon = new javax.swing.JLabel();
+        jLabel2UserName = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ordify");
 
         jPanel2.setBackground(new java.awt.Color(179, 48, 75));
         jPanel2.setForeground(new java.awt.Color(255, 102, 102));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/32 logo.png"))); // NOI18N
         jLabel1.setText("Ordify");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/menu4.png"))); // NOI18N
         jLabel3.setText("jLabel3");
 
+        txtSearchbar.setBackground(new java.awt.Color(255, 255, 255));
         txtSearchbar.addActionListener(this::txtSearchbarActionPerformed);
+
+        jButtonSearch.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonSearch.setForeground(new java.awt.Color(255, 153, 153));
+        jButtonSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/searchlogo.png"))); // NOI18N
+        jButtonSearch.setBorder(null);
+        jButtonSearch.setContentAreaFilled(false);
+        jButtonSearch.setFocusPainted(false);
+
+        jButtonCart.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButtonCart.setForeground(new java.awt.Color(0, 0, 0));
+        jButtonCart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/cart32.png"))); // NOI18N
+        jButtonCart.setText("Cart");
+        jButtonCart.setBorder(null);
+        jButtonCart.setContentAreaFilled(false);
+        jButtonCart.setFocusPainted(false);
+        jButtonCart.addActionListener(this::jButtonCartActionPerformed);
+
+        jLabelUsericon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/user.png"))); // NOI18N
+
+        jLabel2UserName.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2UserName.setPreferredSize(new java.awt.Dimension(66, 16));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -57,19 +87,35 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(227, 227, 227)
-                .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(373, Short.MAX_VALUE))
+                .addGap(297, 297, 297)
+                .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 249, Short.MAX_VALUE)
+                .addComponent(jButtonCart)
+                .addGap(26, 26, 26)
+                .addComponent(jLabelUsericon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel3)
+                            .addComponent(jButtonSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtSearchbar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelUsericon, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonCart, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(jLabel2UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -82,7 +128,7 @@ public class Home extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 579, Short.MAX_VALUE))
+                .addGap(0, 619, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -93,7 +139,7 @@ public class Home extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -102,6 +148,10 @@ public class Home extends javax.swing.JFrame {
     private void txtSearchbarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchbarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSearchbarActionPerformed
+
+    private void jButtonCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCartActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,8 +179,12 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonCart;
+    private javax.swing.JButton jButtonSearch;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2UserName;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabelUsericon;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField txtSearchbar;
