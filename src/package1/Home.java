@@ -92,7 +92,6 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ordify");
-        setPreferredSize(new java.awt.Dimension(1150, 1200));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -254,7 +253,7 @@ public class Home extends javax.swing.JFrame {
         jPanelproducts.setBackground(new java.awt.Color(255, 255, 255));
         jPanelproducts.setPreferredSize(new java.awt.Dimension(907, 800));
 
-        jLabelhomeappliances.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelhomeappliances.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabelhomeappliances.setForeground(new java.awt.Color(0, 0, 0));
         jLabelhomeappliances.setText("Home Appliances");
 
@@ -316,10 +315,11 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabelTVprice)
                 .addGap(24, 24, 24)
-                .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonTVCart))
+                    .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonTVCart)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -690,7 +690,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanelJuicer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelAirfryer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
