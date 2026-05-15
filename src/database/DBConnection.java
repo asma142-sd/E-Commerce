@@ -9,25 +9,21 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-
     public static Connection getConnection() {
-
-        try {
-
-            String path =
-            "jdbc:ucanaccess://C:/Users/Amna/OneDrive/Documents/ecommerce.accdb";
-
-            Connection con =
-            DriverManager.getConnection(path);
-
-            return con;
-
-        } catch(SQLException e) {
-
-            e.printStackTrace();
-
-            return null;
-        }
+    try {
+        // Manually load the driver now that JARs are fixed
+        Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+        
+        // Use the absolute path to your file
+        String url = "jdbc:ucanaccess://D:/Documents/NetBeansProjects/E-Commerce/src/Ecommerce.accdb";
+        
+        Connection conn = DriverManager.getConnection(url);
+        System.out.println("Connection Success!");
+        return conn;
+    } catch (ClassNotFoundException | SQLException e) {
+        System.out.println("Error: " + e.getMessage());
+        return null;
     }
+}
 }
 

@@ -251,7 +251,6 @@ public class Home extends javax.swing.JFrame {
         jPanelproducts.setPreferredSize(new java.awt.Dimension(907, 800));
 
         jLabelhomeappliances.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabelhomeappliances.setForeground(new java.awt.Color(0, 0, 0));
         jLabelhomeappliances.setText("Home Appliances");
 
         jPanelLED.setBackground(new java.awt.Color(255, 255, 255));
@@ -265,11 +264,9 @@ public class Home extends javax.swing.JFrame {
         jLabelTVname.setText("TCL 65 Inches QLED Google Smart TV With AiPQ Processor");
 
         jLabelTVprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelTVprice.setForeground(new java.awt.Color(0, 0, 0));
         jLabelTVprice.setText("Rs. 214,095");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Quantity");
 
         jButtonTVCart.setBackground(new java.awt.Color(179, 48, 75));
@@ -312,10 +309,11 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabelTVprice)
                 .addGap(24, 24, 24)
-                .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonTVCart))
+                    .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonTVCart)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -330,11 +328,9 @@ public class Home extends javax.swing.JFrame {
         jLabeldispenserName.setText("Panasonic Water Dispenser, Stainless Steel ");
 
         jLabelDispenserprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelDispenserprice.setForeground(new java.awt.Color(0, 0, 0));
         jLabelDispenserprice.setText("Rs. 65,000");
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Quantity");
 
         jButtonDispernserCart.setBackground(new java.awt.Color(179, 48, 75)
@@ -397,11 +393,9 @@ public class Home extends javax.swing.JFrame {
         jLabelovenName.setText("Anex Deluxe Oven Toaster1600W, 52 Liters, Black & Silver");
 
         jLabelOvenprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelOvenprice.setForeground(new java.awt.Color(0, 0, 0));
         jLabelOvenprice.setText("Rs. 31,620 ");
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Quantity: ");
 
         jButtonOvenCart.setBackground(new java.awt.Color(179, 48, 75));
@@ -460,11 +454,9 @@ public class Home extends javax.swing.JFrame {
         jLabeltoasterName.setText("Anex Deluxe 2 Slice Toaster,730-870 W, 220-240V, Black");
 
         jLabelToasterprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelToasterprice.setForeground(new java.awt.Color(0, 0, 0));
         jLabelToasterprice.setText("Rs. 8,288");
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Quantity:");
 
         jButton4ToasterCart.setBackground(new java.awt.Color(179, 48, 75)
@@ -524,11 +516,9 @@ public class Home extends javax.swing.JFrame {
         jLabeljuicerName.setText("Anex Deluxe Juicer, 400W, 220-240V, 800ml, Black");
 
         jLabelJuicerprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelJuicerprice.setForeground(new java.awt.Color(0, 0, 0));
         jLabelJuicerprice.setText("Rs. 13,983 ");
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setText("Quantity:");
 
         jButtonJuicerCart.setBackground(new java.awt.Color(179, 48, 75)
@@ -590,11 +580,9 @@ public class Home extends javax.swing.JFrame {
         jLabelairfryerName.setText("Nutricook Air Fryer Slim, 1500W, 5-Liters");
 
         jLabelAirfryerprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelAirfryerprice.setForeground(new java.awt.Color(0, 0, 0));
         jLabelAirfryerprice.setText("Rs. 63,999");
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(0, 0, 0));
         jLabel23.setText("Quantity:");
 
         jButtonAirfryerCart.setBackground(new java.awt.Color(179, 48, 75)
