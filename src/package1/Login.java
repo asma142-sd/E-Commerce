@@ -263,6 +263,8 @@ public class Login extends javax.swing.JFrame {
        if(emailField.getText().isEmpty()
     || String.valueOf(passwordField.getPassword()).isEmpty()) {
 
+           
+           
         JOptionPane.showMessageDialog(
         this,
         "Please fill all fields");
