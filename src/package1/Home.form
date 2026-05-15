@@ -250,7 +250,7 @@
                               <Component id="jLabelCategories" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jButtonhomeApplainces" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButtonbeautyItems" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonBeautyItems" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jButtonfoodItems" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jButtonbooks" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -274,7 +274,7 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButtonhomeApplainces" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButtonbeautyItems" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonBeautyItems" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButtonfoodItems" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -319,7 +319,7 @@
                 <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButtonbeautyItems">
+            <Component class="javax.swing.JButton" name="jButtonBeautyItems">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="13" style="1"/>
@@ -335,7 +335,7 @@
                 <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonbeautyItemsActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBeautyItemsActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonfoodItems">

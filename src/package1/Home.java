@@ -40,7 +40,7 @@ public class Home extends javax.swing.JFrame {
         jLabelmenubarIcon = new javax.swing.JLabel();
         jLabelCategories = new javax.swing.JLabel();
         jButtonhomeApplainces = new javax.swing.JButton();
-        jButtonbeautyItems = new javax.swing.JButton();
+        jButtonBeautyItems = new javax.swing.JButton();
         jButtonfoodItems = new javax.swing.JButton();
         jButtonbooks = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -186,13 +186,13 @@ public class Home extends javax.swing.JFrame {
         jButtonhomeApplainces.setContentAreaFilled(false);
         jButtonhomeApplainces.setFocusPainted(false);
 
-        jButtonbeautyItems.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButtonbeautyItems.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonbeautyItems.setText("Beauty Products");
-        jButtonbeautyItems.setBorder(null);
-        jButtonbeautyItems.setContentAreaFilled(false);
-        jButtonbeautyItems.setFocusPainted(false);
-        jButtonbeautyItems.addActionListener(this::jButtonbeautyItemsActionPerformed);
+        jButtonBeautyItems.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonBeautyItems.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonBeautyItems.setText("Beauty Products");
+        jButtonBeautyItems.setBorder(null);
+        jButtonBeautyItems.setContentAreaFilled(false);
+        jButtonBeautyItems.setFocusPainted(false);
+        jButtonBeautyItems.addActionListener(this::jButtonBeautyItemsActionPerformed);
 
         jButtonfoodItems.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
         jButtonfoodItems.setForeground(new java.awt.Color(255, 255, 255));
@@ -221,7 +221,7 @@ public class Home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabelCategories))
                     .addComponent(jButtonhomeApplainces)
-                    .addComponent(jButtonbeautyItems)
+                    .addComponent(jButtonBeautyItems)
                     .addComponent(jButtonfoodItems)
                     .addComponent(jButtonbooks))
                 .addContainerGap(36, Short.MAX_VALUE))
@@ -239,7 +239,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButtonhomeApplainces)
                 .addGap(18, 18, 18)
-                .addComponent(jButtonbeautyItems)
+                .addComponent(jButtonBeautyItems)
                 .addGap(18, 18, 18)
                 .addComponent(jButtonfoodItems)
                 .addGap(18, 18, 18)
@@ -757,9 +757,9 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCartActionPerformed
 
-    private void jButtonbeautyItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonbeautyItemsActionPerformed
+    private void jButtonBeautyItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBeautyItemsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonbeautyItemsActionPerformed
+    }//GEN-LAST:event_jButtonBeautyItemsActionPerformed
 
     private void jButtonfoodItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonfoodItemsActionPerformed
         // TODO add your handling code here:
@@ -805,13 +805,13 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton4ToasterCart;
     private javax.swing.JButton jButtonAirfryerCart;
+    private javax.swing.JButton jButtonBeautyItems;
     private javax.swing.JButton jButtonCart;
     private javax.swing.JButton jButtonDispernserCart;
     private javax.swing.JButton jButtonJuicerCart;
     private javax.swing.JButton jButtonOvenCart;
     private javax.swing.JButton jButtonSearch;
     private javax.swing.JButton jButtonTVCart;
-    private javax.swing.JButton jButtonbeautyItems;
     private javax.swing.JButton jButtonbooks;
     private javax.swing.JButton jButtonfoodItems;
     private javax.swing.JButton jButtonhomeApplainces;
