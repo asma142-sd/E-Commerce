@@ -1649,10 +1649,6 @@ public class Home extends javax.swing.JFrame {
         jPanelproducts2Layout.setHorizontalGroup(
             jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelproducts2Layout.createSequentialGroup()
-                .addGap(373, 373, 373)
-                .addComponent(jLabelhomeappliances2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanelproducts2Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1665,13 +1661,17 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jPanel6Dispenser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelAirfryer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelproducts2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelhomeappliances2)
+                .addGap(327, 327, 327))
         );
         jPanelproducts2Layout.setVerticalGroup(
             jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelproducts2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(jLabelhomeappliances2)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel6Dispenser1, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE)
                     .addComponent(jPanelTV2, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE))
@@ -1756,7 +1756,7 @@ public class Home extends javax.swing.JFrame {
 
         jLabel6.setBackground(new java.awt.Color(0, 0, 0));
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(179, 48, 75));
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Beauty Products");
 
         jPanelHairserum1.setBackground(new java.awt.Color(255, 255, 255));
@@ -2109,10 +2109,10 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jPanelEyeshadow1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanelHairserum1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelBeautyproducts1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanelBeautyproducts1Layout.createSequentialGroup()
+                .addGap(355, 355, 355)
                 .addComponent(jLabel6)
-                .addGap(377, 377, 377))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelBeautyproducts1Layout.setVerticalGroup(
             jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
