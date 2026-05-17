@@ -299,6 +299,15 @@ public class SignUp extends javax.swing.JFrame {
 
         String sql =
         "INSERT INTO users(username,email,country,phone,password,role) VALUES(?,?,?,?,?,?)";
+        
+        if(con == null) {
+
+    JOptionPane.showMessageDialog(
+    this,
+    "Database connection failed");
+
+    return;
+}
 
         PreparedStatement pst =
         con.prepareStatement(sql);
@@ -320,14 +329,23 @@ public class SignUp extends javax.swing.JFrame {
 
         pst.setString(6,
         "CUSTOMER");
+        
+        System.out.println("Saving...");
 
         pst.executeUpdate();
+        System.out.println("Saved");
 
         JOptionPane.showMessageDialog(
         this,
         "Registration Successful");
+        
+        UserSession.name = nameField.getText();
 
-        new Login().setVisible(true);
+UserSession.email = emailField.getText();
+
+UserSession.country = countryField.getText();
+
+        new Home().setVisible(true);
 
         dispose();
 
@@ -337,6 +355,7 @@ public class SignUp extends javax.swing.JFrame {
         this,
         e);
     }
+    
     }//GEN-LAST:event_signupBtnActionPerformed
 
     /**
