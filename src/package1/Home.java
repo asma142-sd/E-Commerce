@@ -9,7 +9,7 @@ package package1;
  * @author Asma Saeed
  */
 public class Home extends javax.swing.JFrame {
-    
+   
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Home.class.getName());
     
     /**
@@ -40,61 +40,193 @@ public class Home extends javax.swing.JFrame {
         jLabelmenubarIcon = new javax.swing.JLabel();
         jLabelCategories = new javax.swing.JLabel();
         jButtonhomeApplainces = new javax.swing.JButton();
-        jButtonbeautyItems = new javax.swing.JButton();
+        jButtonBeautyItems = new javax.swing.JButton();
         jButtonfoodItems = new javax.swing.JButton();
         jButtonbooks = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel3 = new javax.swing.JPanel();
-        jPanelproducts = new javax.swing.JPanel();
-        jLabelhomeappliances = new javax.swing.JLabel();
-        jPanelLED = new javax.swing.JPanel();
-        jLabelledTV = new javax.swing.JLabel();
-        jLabelTVname = new javax.swing.JLabel();
-        jLabelTVprice = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jSpinner1 = new javax.swing.JSpinner();
-        jButtonTVCart = new javax.swing.JButton();
-        jPanel6Dispenser = new javax.swing.JPanel();
-        jLabeldispenser = new javax.swing.JLabel();
-        jLabeldispenserName = new javax.swing.JLabel();
-        jLabelDispenserprice = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jSpinner2 = new javax.swing.JSpinner();
-        jButtonDispernserCart = new javax.swing.JButton();
-        jPanelOven = new javax.swing.JPanel();
-        jLabel8oven = new javax.swing.JLabel();
-        jLabelovenName = new javax.swing.JLabel();
-        jLabelOvenprice = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jSpinner3 = new javax.swing.JSpinner();
-        jButtonOvenCart = new javax.swing.JButton();
-        jPanelToaster = new javax.swing.JPanel();
-        jLabeltoaster = new javax.swing.JLabel();
-        jLabeltoasterName = new javax.swing.JLabel();
-        jLabelToasterprice = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jSpinner4 = new javax.swing.JSpinner();
-        jButton4ToasterCart = new javax.swing.JButton();
-        jPanelJuicer = new javax.swing.JPanel();
-        jLabel16juicer = new javax.swing.JLabel();
-        jLabeljuicerName = new javax.swing.JLabel();
-        jLabelJuicerprice = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jSpinner5 = new javax.swing.JSpinner();
-        jButtonJuicerCart = new javax.swing.JButton();
-        jPanelAirfryer = new javax.swing.JPanel();
-        jLabel20airfryer = new javax.swing.JLabel();
-        jLabelairfryerName = new javax.swing.JLabel();
-        jLabelAirfryerprice = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jSpinner6 = new javax.swing.JSpinner();
-        jButtonAirfryerCart = new javax.swing.JButton();
+        jPanelFoodItems = new javax.swing.JPanel();
+        jLabelFoodItems = new javax.swing.JLabel();
+        jPanelMilk = new javax.swing.JPanel();
+        jLabelMilkIcon = new javax.swing.JLabel();
+        jLabelMilkName = new javax.swing.JLabel();
+        jLabelMilkPrice = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jSpinnerMilk = new javax.swing.JSpinner();
+        jButtonMilkCart = new javax.swing.JButton();
+        jPanelYogurt = new javax.swing.JPanel();
+        jLabelYogurtIcon = new javax.swing.JLabel();
+        jLabelYogurtName = new javax.swing.JLabel();
+        jLabelYogutPrice = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jSpinnerYogurt = new javax.swing.JSpinner();
+        jButtonYogurtAdd = new javax.swing.JButton();
+        jPanelButter = new javax.swing.JPanel();
+        jLabelButterIcon = new javax.swing.JLabel();
+        jLabelButterName = new javax.swing.JLabel();
+        jLabelButrerPrice = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jSpinnerButter = new javax.swing.JSpinner();
+        jButtonButterAdd = new javax.swing.JButton();
+        jPanelEggs = new javax.swing.JPanel();
+        jLabelEggsIcon = new javax.swing.JLabel();
+        jLabelEggsName = new javax.swing.JLabel();
+        jLabelEggsPrice = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jSpinnerEggs = new javax.swing.JSpinner();
+        jButtonAddEggs = new javax.swing.JButton();
+        jPanelTea = new javax.swing.JPanel();
+        jLabelTeaIcon = new javax.swing.JLabel();
+        jLabelTeaName = new javax.swing.JLabel();
+        jLabelTeaPrice = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jSpinnerTea = new javax.swing.JSpinner();
+        jButtonAddTea = new javax.swing.JButton();
+        jPanelBread = new javax.swing.JPanel();
+        jLabelBreadIcon = new javax.swing.JLabel();
+        jLabelBreadName = new javax.swing.JLabel();
+        jLabelBreadPrice = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jSpinnerBread = new javax.swing.JSpinner();
+        jButtonAddBread = new javax.swing.JButton();
+        jPanelBooks = new javax.swing.JPanel();
+        jPanelBook1 = new javax.swing.JPanel();
+        jLabelBook1Icon = new javax.swing.JLabel();
+        jLabelBook1Name = new javax.swing.JLabel();
+        jLabelBook1Price = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jSpinnerBook1 = new javax.swing.JSpinner();
+        jButtonBook1Cart = new javax.swing.JButton();
+        jLabelBooks = new javax.swing.JLabel();
+        jPanelBook2 = new javax.swing.JPanel();
+        jLabelBook2Icon = new javax.swing.JLabel();
+        jLabelBook2Name = new javax.swing.JLabel();
+        jLabelBook2Price = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jSpinnerBook2 = new javax.swing.JSpinner();
+        jButtonBook2cart = new javax.swing.JButton();
+        jPanelBook3 = new javax.swing.JPanel();
+        jLabelBook3Icon = new javax.swing.JLabel();
+        jLabelBook3Name = new javax.swing.JLabel();
+        jLabelBook3Price = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jSpinnerBook3 = new javax.swing.JSpinner();
+        jButton9 = new javax.swing.JButton();
+        jPanelBook4 = new javax.swing.JPanel();
+        jLabelBook4Icon = new javax.swing.JLabel();
+        jLabelBook4Name = new javax.swing.JLabel();
+        jLabelBook4Price = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jSpinnerBook4 = new javax.swing.JSpinner();
+        jButtonBook4Cart = new javax.swing.JButton();
+        jPanelBook5 = new javax.swing.JPanel();
+        jLabelBook5Icon = new javax.swing.JLabel();
+        jLabelBook5Name = new javax.swing.JLabel();
+        jLabelBook5Price = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jSpinnerBook5 = new javax.swing.JSpinner();
+        jButton10 = new javax.swing.JButton();
+        jPanelBook6 = new javax.swing.JPanel();
+        jLabelBook6Icon = new javax.swing.JLabel();
+        jLabelBook6Name = new javax.swing.JLabel();
+        jLabelBook6Price = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jSpinnerBook6 = new javax.swing.JSpinner();
+        jButtonBook6Cart = new javax.swing.JButton();
+        jPanelproducts2 = new javax.swing.JPanel();
+        jLabelhomeappliances2 = new javax.swing.JLabel();
+        jPanelTV2 = new javax.swing.JPanel();
+        jLabelTVIccon2 = new javax.swing.JLabel();
+        jLabelTVname2 = new javax.swing.JLabel();
+        jLabelTVprice2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jSpinner8 = new javax.swing.JSpinner();
+        jButtonAddTV2 = new javax.swing.JButton();
+        jPanel6Dispenser1 = new javax.swing.JPanel();
+        jLabeldispenser1 = new javax.swing.JLabel();
+        jLabeldispenserName1 = new javax.swing.JLabel();
+        jLabelDispenserprice1 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jSpinner9 = new javax.swing.JSpinner();
+        jButtonAddDispenser1 = new javax.swing.JButton();
+        jPanelOven1 = new javax.swing.JPanel();
+        jLabel8oven1 = new javax.swing.JLabel();
+        jLabelovenName1 = new javax.swing.JLabel();
+        jLabelOvenprice1 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jSpinner10 = new javax.swing.JSpinner();
+        jButtonAddOven1 = new javax.swing.JButton();
+        jPanelToaster1 = new javax.swing.JPanel();
+        jLabeltoaster1 = new javax.swing.JLabel();
+        jLabeltoasterName1 = new javax.swing.JLabel();
+        jLabelToasterprice1 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jSpinner11 = new javax.swing.JSpinner();
+        jButtonAddToaster1 = new javax.swing.JButton();
+        jPanelJuicer1 = new javax.swing.JPanel();
+        jLabelJuicerIcon1 = new javax.swing.JLabel();
+        jLabeljuicerName1 = new javax.swing.JLabel();
+        jLabelJuicerprice1 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jSpinner12 = new javax.swing.JSpinner();
+        jButtonAddJuicer1 = new javax.swing.JButton();
+        jPanelAirfryer1 = new javax.swing.JPanel();
+        jLabelAirfryerIcon1 = new javax.swing.JLabel();
+        jLabelairfryerName1 = new javax.swing.JLabel();
+        jLabelAirfryerprice1 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jSpinner13 = new javax.swing.JSpinner();
+        jButtonAirfryerCart1 = new javax.swing.JButton();
+        jPanelBeautyproducts1 = new javax.swing.JPanel();
+        jPanelPerfume1 = new javax.swing.JPanel();
+        jLabelPerfumeIcon1 = new javax.swing.JLabel();
+        jLabelPerfumeName1 = new javax.swing.JLabel();
+        jLabelPerfumePrice1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jSpinnerPerfume1 = new javax.swing.JSpinner();
+        jButtonAddPerfume1 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jPanelHairserum1 = new javax.swing.JPanel();
+        jLabelHairserumIcon1 = new javax.swing.JLabel();
+        jLabelHairserumName1 = new javax.swing.JLabel();
+        jLabelHairserumPrice1 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jSpinnerHairserum1 = new javax.swing.JSpinner();
+        jButtonHairserumCart1 = new javax.swing.JButton();
+        jPanellipstick1 = new javax.swing.JPanel();
+        jLabelLipstickIcon1 = new javax.swing.JLabel();
+        jLabellipstickName1 = new javax.swing.JLabel();
+        jLabelLipstickPrice1 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jSpinnerLipstick1 = new javax.swing.JSpinner();
+        jButtonAddLipstick1 = new javax.swing.JButton();
+        jPanelEyeshadow1 = new javax.swing.JPanel();
+        jLabelEyeshadowIcon1 = new javax.swing.JLabel();
+        jLabelEyeshadowName1 = new javax.swing.JLabel();
+        jLabelEyeshadowPrice1 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jSpinnerEyeshadow1 = new javax.swing.JSpinner();
+        jButtonEyeshadowCart1 = new javax.swing.JButton();
+        jPanelConcealer1 = new javax.swing.JPanel();
+        jLabelConcealerIcon1 = new javax.swing.JLabel();
+        jLabelConcealerName1 = new javax.swing.JLabel();
+        jLabelConcealerPrice1 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jSpinnerConcealer1 = new javax.swing.JSpinner();
+        jButtonAddConcealer1 = new javax.swing.JButton();
+        jPanelMascara1 = new javax.swing.JPanel();
+        jLabelMascaraIcon1 = new javax.swing.JLabel();
+        jLabelMascaraName1 = new javax.swing.JLabel();
+        jLabelMascaraPrice1 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jSpinnerMascara1 = new javax.swing.JSpinner();
+        jButtonAddMascara1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ordify");
-        setPreferredSize(new java.awt.Dimension(1150, 1200));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1128, 2220));
 
         jPanel2.setBackground(new java.awt.Color(179, 48, 75));
         jPanel2.setForeground(new java.awt.Color(255, 102, 102));
@@ -176,22 +308,22 @@ public class Home extends javax.swing.JFrame {
         jLabelCategories.setForeground(new java.awt.Color(255, 255, 255));
         jLabelCategories.setText("Categories");
 
-        jButtonhomeApplainces.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonhomeApplainces.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButtonhomeApplainces.setForeground(new java.awt.Color(255, 255, 255));
         jButtonhomeApplainces.setText("Home Appliances");
         jButtonhomeApplainces.setBorder(null);
         jButtonhomeApplainces.setContentAreaFilled(false);
         jButtonhomeApplainces.setFocusPainted(false);
 
-        jButtonbeautyItems.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButtonbeautyItems.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonbeautyItems.setText("Beauty Products");
-        jButtonbeautyItems.setBorder(null);
-        jButtonbeautyItems.setContentAreaFilled(false);
-        jButtonbeautyItems.setFocusPainted(false);
-        jButtonbeautyItems.addActionListener(this::jButtonbeautyItemsActionPerformed);
+        jButtonBeautyItems.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButtonBeautyItems.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonBeautyItems.setText("Beauty Products");
+        jButtonBeautyItems.setBorder(null);
+        jButtonBeautyItems.setContentAreaFilled(false);
+        jButtonBeautyItems.setFocusPainted(false);
+        jButtonBeautyItems.addActionListener(this::jButtonBeautyItemsActionPerformed);
 
-        jButtonfoodItems.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonfoodItems.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButtonfoodItems.setForeground(new java.awt.Color(255, 255, 255));
         jButtonfoodItems.setText("Food Items");
         jButtonfoodItems.setBorder(null);
@@ -199,7 +331,7 @@ public class Home extends javax.swing.JFrame {
         jButtonfoodItems.setFocusPainted(false);
         jButtonfoodItems.addActionListener(this::jButtonfoodItemsActionPerformed);
 
-        jButtonbooks.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonbooks.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButtonbooks.setForeground(new java.awt.Color(255, 255, 255));
         jButtonbooks.setText("Books");
         jButtonbooks.setBorder(null);
@@ -218,7 +350,7 @@ public class Home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabelCategories))
                     .addComponent(jButtonhomeApplainces)
-                    .addComponent(jButtonbeautyItems)
+                    .addComponent(jButtonBeautyItems)
                     .addComponent(jButtonfoodItems)
                     .addComponent(jButtonbooks))
                 .addContainerGap(36, Short.MAX_VALUE))
@@ -236,445 +368,1770 @@ public class Home extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButtonhomeApplainces)
                 .addGap(18, 18, 18)
-                .addComponent(jButtonbeautyItems)
+                .addComponent(jButtonBeautyItems)
                 .addGap(18, 18, 18)
                 .addComponent(jButtonfoodItems)
                 .addGap(18, 18, 18)
                 .addComponent(jButtonbooks)
-                .addContainerGap(955, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane2.setBorder(null);
 
-        jPanelproducts.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelproducts.setPreferredSize(new java.awt.Dimension(907, 800));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabelhomeappliances.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabelhomeappliances.setText("Home Appliances");
+        jPanelFoodItems.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelFoodItems.setMaximumSize(new java.awt.Dimension(800, 3240));
 
-        jPanelLED.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelLED.setPreferredSize(new java.awt.Dimension(400, 300));
+        jLabelFoodItems.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabelFoodItems.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelFoodItems.setText("Food Items");
 
-        jLabelledTV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/ledTV (3).png"))); // NOI18N
-        jLabelledTV.setText("    ");
+        jPanelMilk.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelMilk.setPreferredSize(new java.awt.Dimension(400, 300));
 
-        jLabelTVname.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelTVname.setForeground(new java.awt.Color(0, 102, 204));
-        jLabelTVname.setText("TCL 65 Inches QLED Google Smart TV With AiPQ Processor");
+        jLabelMilkIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/milk (2).png"))); // NOI18N
+        jLabelMilkIcon.setText("   ");
 
-        jLabelTVprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelTVprice.setText("Rs. 214,095");
+        jLabelMilkName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelMilkName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelMilkName.setText("Olper's Full Cream Milk, 1000ml");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel3.setText("Quantity");
+        jLabelMilkPrice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelMilkPrice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelMilkPrice.setText("Rs. 380");
 
-        jButtonTVCart.setBackground(new java.awt.Color(179, 48, 75));
-        jButtonTVCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButtonTVCart.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonTVCart.setText("Add to Cart");
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel14.setText("Quantity:");
 
-        javax.swing.GroupLayout jPanelLEDLayout = new javax.swing.GroupLayout(jPanelLED);
-        jPanelLED.setLayout(jPanelLEDLayout);
-        jPanelLEDLayout.setHorizontalGroup(
-            jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelLEDLayout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addComponent(jLabelledTV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(93, 93, 93))
-            .addGroup(jPanelLEDLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelLEDLayout.createSequentialGroup()
-                        .addComponent(jLabelTVprice)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanelLEDLayout.createSequentialGroup()
-                        .addComponent(jLabelTVname)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanelLEDLayout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonTVCart)
-                        .addGap(47, 47, 47))))
+        jButtonMilkCart.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonMilkCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonMilkCart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonMilkCart.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelMilkLayout = new javax.swing.GroupLayout(jPanelMilk);
+        jPanelMilk.setLayout(jPanelMilkLayout);
+        jPanelMilkLayout.setHorizontalGroup(
+            jPanelMilkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMilkLayout.createSequentialGroup()
+                .addGroup(jPanelMilkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMilkLayout.createSequentialGroup()
+                        .addGap(143, 143, 143)
+                        .addComponent(jLabelMilkIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelMilkLayout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addComponent(jLabelMilkName))
+                    .addGroup(jPanelMilkLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanelMilkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelMilkPrice)
+                            .addGroup(jPanelMilkLayout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerMilk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
+                                .addComponent(jButtonMilkCart)))))
+                .addGap(44, 44, 44))
         );
-        jPanelLEDLayout.setVerticalGroup(
-            jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelLEDLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabelledTV)
-                .addGap(36, 36, 36)
-                .addComponent(jLabelTVname, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPanelMilkLayout.setVerticalGroup(
+            jPanelMilkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMilkLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabelMilkIcon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelMilkName)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelMilkPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelTVprice)
-                .addGap(24, 24, 24)
-                .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addGroup(jPanelLEDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonTVCart)))
+                .addGroup(jPanelMilkLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jSpinnerMilk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonMilkCart))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+
+        jPanelYogurt.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelYogurt.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelYogurtIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/yogurt (2).png"))); // NOI18N
+        jLabelYogurtIcon.setText("   ");
+
+        jLabelYogurtName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelYogurtName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelYogurtName.setText("Nestle Original Yogurt, Sweet, 400g");
+
+        jLabelYogutPrice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelYogutPrice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelYogutPrice.setText("Rs. 270");
+
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel28.setText("Quantity:");
+
+        jButtonYogurtAdd.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonYogurtAdd.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonYogurtAdd.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonYogurtAdd.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelYogurtLayout = new javax.swing.GroupLayout(jPanelYogurt);
+        jPanelYogurt.setLayout(jPanelYogurtLayout);
+        jPanelYogurtLayout.setHorizontalGroup(
+            jPanelYogurtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelYogurtLayout.createSequentialGroup()
+                .addContainerGap(81, Short.MAX_VALUE)
+                .addComponent(jLabelYogurtName)
+                .addGap(77, 77, 77))
+            .addGroup(jPanelYogurtLayout.createSequentialGroup()
+                .addGap(135, 135, 135)
+                .addComponent(jLabelYogurtIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanelYogurtLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(jPanelYogurtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelYogutPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSpinnerYogurt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonYogurtAdd)
+                .addGap(31, 31, 31))
+        );
+        jPanelYogurtLayout.setVerticalGroup(
+            jPanelYogurtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelYogurtLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabelYogurtIcon)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelYogurtName)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelYogutPrice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelYogurtLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(jSpinnerYogurt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonYogurtAdd))
+                .addContainerGap(26, Short.MAX_VALUE))
+        );
+
+        jPanelButter.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelButter.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelButterIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/butter (2).png"))); // NOI18N
+        jLabelButterIcon.setText("    ");
+
+        jLabelButterName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelButterName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelButterName.setText("Fresh Street Un-Salted Butter, 200g");
+
+        jLabelButrerPrice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelButrerPrice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelButrerPrice.setText("  Rs. 747 ");
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel35.setText("Quantity:");
+
+        jButtonButterAdd.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonButterAdd.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonButterAdd.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonButterAdd.setText("Add to Cart");
+        jButtonButterAdd.addActionListener(this::jButtonButterAddActionPerformed);
+
+        javax.swing.GroupLayout jPanelButterLayout = new javax.swing.GroupLayout(jPanelButter);
+        jPanelButter.setLayout(jPanelButterLayout);
+        jPanelButterLayout.setHorizontalGroup(
+            jPanelButterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelButterLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelButterName)
+                .addGap(78, 78, 78))
+            .addGroup(jPanelButterLayout.createSequentialGroup()
+                .addGroup(jPanelButterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelButterLayout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addComponent(jLabelButterIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelButterLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanelButterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelButrerPrice)
+                            .addGroup(jPanelButterLayout.createSequentialGroup()
+                                .addComponent(jLabel35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerButter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
+                                .addComponent(jButtonButterAdd)))))
+                .addGap(42, 42, 42))
+        );
+        jPanelButterLayout.setVerticalGroup(
+            jPanelButterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelButterLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabelButterIcon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelButterName)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelButrerPrice)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelButterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(jSpinnerButter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonButterAdd))
+                .addContainerGap(43, Short.MAX_VALUE))
+        );
+
+        jPanelEggs.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelEggs.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelEggsIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/eggs (1).png"))); // NOI18N
+        jLabelEggsIcon.setText("     ");
+
+        jLabelEggsName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelEggsName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelEggsName.setText("All Fresh Farms Brown Eggs, 12-Pack");
+
+        jLabelEggsPrice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelEggsPrice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelEggsPrice.setText("Rs. 630");
+
+        jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel41.setText("Quantity:");
+
+        jButtonAddEggs.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddEggs.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddEggs.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddEggs.setText("Add to Cart");
+        jButtonAddEggs.addActionListener(this::jButtonAddEggsActionPerformed);
+
+        javax.swing.GroupLayout jPanelEggsLayout = new javax.swing.GroupLayout(jPanelEggs);
+        jPanelEggs.setLayout(jPanelEggsLayout);
+        jPanelEggsLayout.setHorizontalGroup(
+            jPanelEggsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelEggsLayout.createSequentialGroup()
+                .addContainerGap(80, Short.MAX_VALUE)
+                .addGroup(jPanelEggsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEggsLayout.createSequentialGroup()
+                        .addComponent(jLabelEggsName)
+                        .addGap(72, 72, 72))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEggsLayout.createSequentialGroup()
+                        .addComponent(jLabelEggsIcon)
+                        .addGap(92, 92, 92))))
+            .addGroup(jPanelEggsLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addGroup(jPanelEggsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelEggsPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSpinnerEggs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonAddEggs)
+                .addGap(38, 38, 38))
+        );
+        jPanelEggsLayout.setVerticalGroup(
+            jPanelEggsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelEggsLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jLabelEggsIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelEggsName)
+                .addGap(26, 26, 26)
+                .addComponent(jLabelEggsPrice)
+                .addGap(18, 18, 18)
+                .addGroup(jPanelEggsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(jSpinnerEggs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddEggs))
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+
+        jPanelTea.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelTea.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelTeaIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/tea (1).png"))); // NOI18N
+        jLabelTeaIcon.setText("   ");
+
+        jLabelTeaName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelTeaName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelTeaName.setText("Lipton Yellow Label Tea, 170g");
+
+        jLabelTeaPrice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelTeaPrice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelTeaPrice.setText("Rs. 400 ");
+
+        jLabel46.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel46.setText("Quantity:");
+
+        jButtonAddTea.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddTea.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddTea.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddTea.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelTeaLayout = new javax.swing.GroupLayout(jPanelTea);
+        jPanelTea.setLayout(jPanelTeaLayout);
+        jPanelTeaLayout.setHorizontalGroup(
+            jPanelTeaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTeaLayout.createSequentialGroup()
+                .addGap(102, 102, 102)
+                .addGroup(jPanelTeaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelTeaName)
+                    .addGroup(jPanelTeaLayout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(jLabelTeaIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(96, Short.MAX_VALUE))
+            .addGroup(jPanelTeaLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(jPanelTeaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabelTeaPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSpinnerTea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonAddTea)
+                .addGap(40, 40, 40))
+        );
+        jPanelTeaLayout.setVerticalGroup(
+            jPanelTeaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTeaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelTeaIcon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelTeaName)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanelTeaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanelTeaLayout.createSequentialGroup()
+                        .addComponent(jLabelTeaPrice)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel46))
+                    .addGroup(jPanelTeaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jSpinnerTea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonAddTea)))
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
+
+        jPanelBread.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBread.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelBreadIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/bread (1).png"))); // NOI18N
+        jLabelBreadIcon.setText("   ");
+
+        jLabelBreadName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBreadName.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelBreadName.setText("Dawn Vitamin Enriched Bread Small");
+
+        jLabelBreadPrice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBreadPrice.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelBreadPrice.setText("Rs. 130");
+
+        jLabel49.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel49.setText("Quantity:");
+
+        jButtonAddBread.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddBread.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddBread.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddBread.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelBreadLayout = new javax.swing.GroupLayout(jPanelBread);
+        jPanelBread.setLayout(jPanelBreadLayout);
+        jPanelBreadLayout.setHorizontalGroup(
+            jPanelBreadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBreadLayout.createSequentialGroup()
+                .addGroup(jPanelBreadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBreadLayout.createSequentialGroup()
+                        .addGap(130, 130, 130)
+                        .addComponent(jLabelBreadIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelBreadLayout.createSequentialGroup()
+                        .addGap(79, 79, 79)
+                        .addComponent(jLabelBreadName))
+                    .addGroup(jPanelBreadLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanelBreadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelBreadPrice)
+                            .addGroup(jPanelBreadLayout.createSequentialGroup()
+                                .addComponent(jLabel49)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerBread, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                                .addComponent(jButtonAddBread)))))
+                .addGap(29, 29, 29))
+        );
+        jPanelBreadLayout.setVerticalGroup(
+            jPanelBreadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBreadLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelBreadIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelBreadName)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelBreadPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelBreadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel49)
+                    .addComponent(jSpinnerBread, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddBread))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel6Dispenser.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel6Dispenser.setPreferredSize(new java.awt.Dimension(400, 300));
-
-        jLabeldispenser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/waterDispenser (6).png"))); // NOI18N
-        jLabeldispenser.setText("    ");
-
-        jLabeldispenserName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabeldispenserName.setForeground(new java.awt.Color(0, 102, 204));
-        jLabeldispenserName.setText("Panasonic Water Dispenser, Stainless Steel ");
-
-        jLabelDispenserprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelDispenserprice.setText("Rs. 65,000");
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel7.setText("Quantity");
-
-        jButtonDispernserCart.setBackground(new java.awt.Color(179, 48, 75)
+        javax.swing.GroupLayout jPanelFoodItemsLayout = new javax.swing.GroupLayout(jPanelFoodItems);
+        jPanelFoodItems.setLayout(jPanelFoodItemsLayout);
+        jPanelFoodItemsLayout.setHorizontalGroup(
+            jPanelFoodItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFoodItemsLayout.createSequentialGroup()
+                .addGap(390, 390, 390)
+                .addComponent(jLabelFoodItems)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanelFoodItemsLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanelFoodItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelMilk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelButter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelTea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addGroup(jPanelFoodItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelYogurt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelEggs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelBread, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33))
         );
-        jButtonDispernserCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButtonDispernserCart.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonDispernserCart.setText("Add to Cart");
-        jButtonDispernserCart.addActionListener(this::jButtonDispernserCartActionPerformed);
+        jPanelFoodItemsLayout.setVerticalGroup(
+            jPanelFoodItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelFoodItemsLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelFoodItems)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelFoodItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelMilk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelYogurt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(jPanelFoodItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelButter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelEggs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addGroup(jPanelFoodItemsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelTea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelBread, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
-        javax.swing.GroupLayout jPanel6DispenserLayout = new javax.swing.GroupLayout(jPanel6Dispenser);
-        jPanel6Dispenser.setLayout(jPanel6DispenserLayout);
-        jPanel6DispenserLayout.setHorizontalGroup(
-            jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6DispenserLayout.createSequentialGroup()
-                .addGroup(jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6DispenserLayout.createSequentialGroup()
-                        .addGap(146, 146, 146)
-                        .addComponent(jLabeldispenser, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6DispenserLayout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addGroup(jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelDispenserprice)
-                            .addGroup(jPanel6DispenserLayout.createSequentialGroup()
-                                .addComponent(jLabel7)
+        jPanelBooks.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBooks.setMaximumSize(new java.awt.Dimension(800, 32320));
+        jPanelBooks.setPreferredSize(new java.awt.Dimension(800, 1200));
+
+        jPanelBook1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBook1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelBook1Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Book1 (2).png"))); // NOI18N
+        jLabelBook1Icon.setText("  ");
+
+        jLabelBook1Name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook1Name.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelBook1Name.setText("The Courage to Be Disliked By: Ichiro Kishimi");
+
+        jLabelBook1Price.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook1Price.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelBook1Price.setText("Rs 3,195");
+
+        jLabel54.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel54.setText("Quantity:");
+
+        jButtonBook1Cart.setBackground(new java.awt.Color(179, 48, 75)
+        );
+        jButtonBook1Cart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonBook1Cart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonBook1Cart.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelBook1Layout = new javax.swing.GroupLayout(jPanelBook1);
+        jPanelBook1.setLayout(jPanelBook1Layout);
+        jPanelBook1Layout.setHorizontalGroup(
+            jPanelBook1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook1Layout.createSequentialGroup()
+                .addGroup(jPanelBook1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBook1Layout.createSequentialGroup()
+                        .addGap(136, 136, 136)
+                        .addComponent(jLabelBook1Icon, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelBook1Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jLabelBook1Name))
+                    .addGroup(jPanelBook1Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanelBook1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelBook1Price)
+                            .addGroup(jPanelBook1Layout.createSequentialGroup()
+                                .addComponent(jLabel54)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonDispernserCart)))))
-                .addGap(35, 35, 35))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6DispenserLayout.createSequentialGroup()
-                .addContainerGap(57, Short.MAX_VALUE)
-                .addComponent(jLabeldispenserName, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(73, 73, 73))
+                                .addComponent(jSpinnerBook1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
+                                .addComponent(jButtonBook1Cart)))))
+                .addGap(32, 32, 32))
         );
-        jPanel6DispenserLayout.setVerticalGroup(
-            jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6DispenserLayout.createSequentialGroup()
+        jPanelBook1Layout.setVerticalGroup(
+            jPanelBook1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabeldispenser, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabeldispenserName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelDispenserprice)
+                .addComponent(jLabelBook1Icon)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel6DispenserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonDispernserCart))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addComponent(jLabelBook1Name, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(jLabelBook1Price)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelBook1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel54)
+                    .addComponent(jSpinnerBook1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBook1Cart))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
-        jPanelOven.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelOven.setPreferredSize(new java.awt.Dimension(400, 300));
+        jLabelBooks.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabelBooks.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelBooks.setText("Books");
 
-        jLabel8oven.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Oven (1).png"))); // NOI18N
-        jLabel8oven.setText("     ");
+        jPanelBook2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBook2.setPreferredSize(new java.awt.Dimension(400, 300));
 
-        jLabelovenName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelovenName.setForeground(new java.awt.Color(0, 102, 204));
-        jLabelovenName.setText("Anex Deluxe Oven Toaster1600W, 52 Liters, Black & Silver");
+        jLabelBook2Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Book2 (1).png"))); // NOI18N
+        jLabelBook2Icon.setText("  ");
 
-        jLabelOvenprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelOvenprice.setText("Rs. 31,620 ");
+        jLabelBook2Name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook2Name.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelBook2Name.setText("Iran's Grand Strategy: A Political History By: Vali Nasr ");
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel11.setText("Quantity: ");
+        jLabelBook2Price.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook2Price.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelBook2Price.setText("Rs 1,795");
 
-        jButtonOvenCart.setBackground(new java.awt.Color(179, 48, 75));
-        jButtonOvenCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButtonOvenCart.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonOvenCart.setText("Add to Cart");
+        jLabel58.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel58.setText("Quantity:");
 
-        javax.swing.GroupLayout jPanelOvenLayout = new javax.swing.GroupLayout(jPanelOven);
-        jPanelOven.setLayout(jPanelOvenLayout);
-        jPanelOvenLayout.setHorizontalGroup(
-            jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelOvenLayout.createSequentialGroup()
-                .addGroup(jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelOvenLayout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(jLabel8oven, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelOvenLayout.createSequentialGroup()
+        jButtonBook2cart.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonBook2cart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonBook2cart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonBook2cart.setText("Add to Cart");
+        jButtonBook2cart.addActionListener(this::jButtonBook2cartActionPerformed);
+
+        javax.swing.GroupLayout jPanelBook2Layout = new javax.swing.GroupLayout(jPanelBook2);
+        jPanelBook2.setLayout(jPanelBook2Layout);
+        jPanelBook2Layout.setHorizontalGroup(
+            jPanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook2Layout.createSequentialGroup()
+                .addGap(133, 133, 133)
+                .addComponent(jLabelBook2Icon, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanelBook2Layout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addGroup(jPanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBook2Layout.createSequentialGroup()
+                        .addGroup(jPanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelBook2Name)
+                            .addComponent(jLabelBook2Price))
+                        .addContainerGap(15, Short.MAX_VALUE))
+                    .addGroup(jPanelBook2Layout.createSequentialGroup()
+                        .addComponent(jLabel58)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSpinnerBook2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonBook2cart)
+                        .addGap(23, 23, 23))))
+        );
+        jPanelBook2Layout.setVerticalGroup(
+            jPanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelBook2Icon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelBook2Name)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelBook2Price)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelBook2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel58)
+                    .addComponent(jSpinnerBook2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBook2cart))
+                .addContainerGap(9, Short.MAX_VALUE))
+        );
+
+        jPanelBook3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBook3.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelBook3Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Book3 (1).png"))); // NOI18N
+        jLabelBook3Icon.setText("  ");
+
+        jLabelBook3Name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook3Name.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelBook3Name.setText(" History Of Western Philosophy By: Bertrand Russell");
+
+        jLabelBook3Price.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook3Price.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelBook3Price.setText("Rs 1,349");
+
+        jLabel62.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel62.setText("Quantity:");
+
+        jButton9.setBackground(new java.awt.Color(179, 48, 75));
+        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setText("Add to Cart");
+        jButton9.addActionListener(this::jButton9ActionPerformed);
+
+        javax.swing.GroupLayout jPanelBook3Layout = new javax.swing.GroupLayout(jPanelBook3);
+        jPanelBook3.setLayout(jPanelBook3Layout);
+        jPanelBook3Layout.setHorizontalGroup(
+            jPanelBook3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook3Layout.createSequentialGroup()
+                .addGroup(jPanelBook3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBook3Layout.createSequentialGroup()
+                        .addGap(133, 133, 133)
+                        .addComponent(jLabelBook3Icon, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelBook3Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addGroup(jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabelovenName)
-                            .addComponent(jLabelOvenprice)
-                            .addGroup(jPanelOvenLayout.createSequentialGroup()
-                                .addComponent(jLabel11)
+                        .addGroup(jPanelBook3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelBook3Price)
+                            .addGroup(jPanelBook3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(jPanelBook3Layout.createSequentialGroup()
+                                    .addComponent(jLabel62)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jSpinnerBook3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jButton9))
+                                .addComponent(jLabelBook3Name)))))
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        jPanelBook3Layout.setVerticalGroup(
+            jPanelBook3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelBook3Icon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelBook3Name)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelBook3Price)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelBook3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel62)
+                    .addComponent(jSpinnerBook3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton9))
+                .addContainerGap(9, Short.MAX_VALUE))
+        );
+
+        jPanelBook4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBook4.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelBook4Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Book4 (1).png"))); // NOI18N
+        jLabelBook4Icon.setText(" ");
+
+        jLabelBook4Name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook4Name.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelBook4Name.setText("The Let Them Theory By: Mel Robbins");
+
+        jLabelBook4Price.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook4Price.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelBook4Price.setText("Rs 7,015");
+
+        jLabel66.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel66.setText("Quantity:");
+
+        jButtonBook4Cart.setBackground(new java.awt.Color(179, 48, 75)
+        );
+        jButtonBook4Cart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonBook4Cart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonBook4Cart.setText("Add to Cart");
+        jButtonBook4Cart.addActionListener(this::jButtonBook4CartActionPerformed);
+
+        javax.swing.GroupLayout jPanelBook4Layout = new javax.swing.GroupLayout(jPanelBook4);
+        jPanelBook4.setLayout(jPanelBook4Layout);
+        jPanelBook4Layout.setHorizontalGroup(
+            jPanelBook4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook4Layout.createSequentialGroup()
+                .addGroup(jPanelBook4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBook4Layout.createSequentialGroup()
+                        .addGap(140, 140, 140)
+                        .addComponent(jLabelBook4Icon, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelBook4Layout.createSequentialGroup()
+                        .addGap(68, 68, 68)
+                        .addComponent(jLabelBook4Name))
+                    .addGroup(jPanelBook4Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addGroup(jPanelBook4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelBook4Price)
+                            .addGroup(jPanelBook4Layout.createSequentialGroup()
+                                .addComponent(jLabel66)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jSpinnerBook4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 112, Short.MAX_VALUE)
+                                .addComponent(jButtonBook4Cart)))))
+                .addGap(22, 22, 22))
+        );
+        jPanelBook4Layout.setVerticalGroup(
+            jPanelBook4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelBook4Icon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelBook4Name)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelBook4Price)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelBook4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel66)
+                    .addComponent(jSpinnerBook4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBook4Cart))
+                .addContainerGap(11, Short.MAX_VALUE))
+        );
+
+        jPanelBook5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBook5.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelBook5Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Book5 (1).png"))); // NOI18N
+        jLabelBook5Icon.setText(" ");
+
+        jLabelBook5Name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook5Name.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelBook5Name.setText("White Nights: Fjodor Dostoyevsky");
+
+        jLabelBook5Price.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook5Price.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelBook5Price.setText("Rs 1,255");
+
+        jLabel70.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel70.setText("Quantity:");
+
+        jButton10.setBackground(new java.awt.Color(179, 48, 75)
+        );
+        jButton10.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
+        jButton10.setText("Add to Cart");
+        jButton10.addActionListener(this::jButton10ActionPerformed);
+
+        javax.swing.GroupLayout jPanelBook5Layout = new javax.swing.GroupLayout(jPanelBook5);
+        jPanelBook5.setLayout(jPanelBook5Layout);
+        jPanelBook5Layout.setHorizontalGroup(
+            jPanelBook5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook5Layout.createSequentialGroup()
+                .addGroup(jPanelBook5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBook5Layout.createSequentialGroup()
+                        .addGap(138, 138, 138)
+                        .addComponent(jLabelBook5Icon, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelBook5Layout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addComponent(jLabelBook5Name))
+                    .addGroup(jPanelBook5Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanelBook5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelBook5Price)
+                            .addGroup(jPanelBook5Layout.createSequentialGroup()
+                                .addComponent(jLabel70)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerBook5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
+                                .addComponent(jButton10)))))
+                .addGap(27, 27, 27))
+        );
+        jPanelBook5Layout.setVerticalGroup(
+            jPanelBook5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelBook5Icon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelBook5Name)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelBook5Price)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelBook5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel70)
+                    .addComponent(jSpinnerBook5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton10))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        jPanelBook6.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBook6.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelBook6Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Book6 (1).png"))); // NOI18N
+        jLabelBook6Icon.setText(" ");
+
+        jLabelBook6Name.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook6Name.setForeground(new java.awt.Color(0, 102, 153));
+        jLabelBook6Name.setText("The Art of Being Alone By: Renuka Gavrani ");
+
+        jLabelBook6Price.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelBook6Price.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelBook6Price.setText("Rs 2,495");
+
+        jLabel74.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel74.setText("Quantity:");
+
+        jButtonBook6Cart.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonBook6Cart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonBook6Cart.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonBook6Cart.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelBook6Layout = new javax.swing.GroupLayout(jPanelBook6);
+        jPanelBook6.setLayout(jPanelBook6Layout);
+        jPanelBook6Layout.setHorizontalGroup(
+            jPanelBook6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelBook6Layout.createSequentialGroup()
+                .addContainerGap(54, Short.MAX_VALUE)
+                .addComponent(jLabelBook6Name)
+                .addGap(48, 48, 48))
+            .addGroup(jPanelBook6Layout.createSequentialGroup()
+                .addGroup(jPanelBook6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBook6Layout.createSequentialGroup()
+                        .addGap(139, 139, 139)
+                        .addComponent(jLabelBook6Icon, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelBook6Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addGroup(jPanelBook6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelBook6Price)
+                            .addGroup(jPanelBook6Layout.createSequentialGroup()
+                                .addComponent(jLabel74)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerBook6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonOvenCart)
+                                .addComponent(jButtonBook6Cart)))))
+                .addGap(22, 22, 22))
+        );
+        jPanelBook6Layout.setVerticalGroup(
+            jPanelBook6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBook6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelBook6Icon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelBook6Name)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelBook6Price)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelBook6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSpinnerBook6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBook6Cart))
+                .addContainerGap(10, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanelBooksLayout = new javax.swing.GroupLayout(jPanelBooks);
+        jPanelBooks.setLayout(jPanelBooksLayout);
+        jPanelBooksLayout.setHorizontalGroup(
+            jPanelBooksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBooksLayout.createSequentialGroup()
+                .addGroup(jPanelBooksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelBooksLayout.createSequentialGroup()
+                        .addGap(409, 409, 409)
+                        .addComponent(jLabelBooks))
+                    .addGroup(jPanelBooksLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(jPanelBooksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanelBook1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanelBook3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanelBook5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(44, 44, 44)
+                        .addGroup(jPanelBooksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanelBook4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanelBook2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanelBook6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+        jPanelBooksLayout.setVerticalGroup(
+            jPanelBooksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBooksLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelBooks)
+                .addGap(27, 27, 27)
+                .addGroup(jPanelBooksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelBook1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelBook2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(48, 48, 48)
+                .addGroup(jPanelBooksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelBook3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelBook4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50)
+                .addGroup(jPanelBooksLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelBook5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelBook6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(61, Short.MAX_VALUE))
+        );
+
+        jPanelproducts2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelproducts2.setPreferredSize(new java.awt.Dimension(907, 800));
+
+        jLabelhomeappliances2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabelhomeappliances2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabelhomeappliances2.setText("Home Appliances");
+
+        jPanelTV2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelTV2.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelTVIccon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/ledTV (3).png"))); // NOI18N
+        jLabelTVIccon2.setText("    ");
+
+        jLabelTVname2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelTVname2.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelTVname2.setText("TCL 65 Inches QLED Google Smart TV With AiPQ Processor");
+
+        jLabelTVprice2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelTVprice2.setText("Rs. 214,095");
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel5.setText("Quantity");
+
+        jButtonAddTV2.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddTV2.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddTV2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddTV2.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelTV2Layout = new javax.swing.GroupLayout(jPanelTV2);
+        jPanelTV2.setLayout(jPanelTV2Layout);
+        jPanelTV2Layout.setHorizontalGroup(
+            jPanelTV2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTV2Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(jLabelTVIccon2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(93, 93, 93))
+            .addGroup(jPanelTV2Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanelTV2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelTV2Layout.createSequentialGroup()
+                        .addComponent(jLabelTVprice2)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanelTV2Layout.createSequentialGroup()
+                        .addComponent(jLabelTVname2)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelTV2Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonAddTV2)
+                        .addGap(47, 47, 47))))
+        );
+        jPanelTV2Layout.setVerticalGroup(
+            jPanelTV2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTV2Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabelTVIccon2)
+                .addGap(36, 36, 36)
+                .addComponent(jLabelTVname2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelTVprice2)
+                .addGap(24, 24, 24)
+                .addGroup(jPanelTV2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addGroup(jPanelTV2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonAddTV2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel6Dispenser1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6Dispenser1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabeldispenser1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/waterDispenser (6).png"))); // NOI18N
+        jLabeldispenser1.setText("    ");
+
+        jLabeldispenserName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabeldispenserName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabeldispenserName1.setText("Panasonic Water Dispenser, Stainless Steel ");
+
+        jLabelDispenserprice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelDispenserprice1.setText("Rs. 65,000");
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel8.setText("Quantity");
+
+        jButtonAddDispenser1.setBackground(new java.awt.Color(179, 48, 75)
+        );
+        jButtonAddDispenser1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddDispenser1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddDispenser1.setText("Add to Cart");
+        jButtonAddDispenser1.addActionListener(this::jButtonAddDispenser1ActionPerformed);
+
+        javax.swing.GroupLayout jPanel6Dispenser1Layout = new javax.swing.GroupLayout(jPanel6Dispenser1);
+        jPanel6Dispenser1.setLayout(jPanel6Dispenser1Layout);
+        jPanel6Dispenser1Layout.setHorizontalGroup(
+            jPanel6Dispenser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Dispenser1Layout.createSequentialGroup()
+                .addGroup(jPanel6Dispenser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Dispenser1Layout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(jLabeldispenser1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Dispenser1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel6Dispenser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelDispenserprice1)
+                            .addGroup(jPanel6Dispenser1Layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonAddDispenser1)))))
+                .addGap(35, 35, 35))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Dispenser1Layout.createSequentialGroup()
+                .addGap(0, 57, Short.MAX_VALUE)
+                .addComponent(jLabeldispenserName1)
+                .addGap(49, 49, 49))
+        );
+        jPanel6Dispenser1Layout.setVerticalGroup(
+            jPanel6Dispenser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Dispenser1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabeldispenser1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabeldispenserName1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelDispenserprice1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Dispenser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddDispenser1))
+                .addContainerGap(53, Short.MAX_VALUE))
+        );
+
+        jPanelOven1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelOven1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabel8oven1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/Oven (1).png"))); // NOI18N
+        jLabel8oven1.setText("     ");
+
+        jLabelovenName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelovenName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelovenName1.setText("Anex Deluxe Oven Toaster1600W, 52 Liters, Black & Silver");
+
+        jLabelOvenprice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelOvenprice1.setText("Rs. 31,620 ");
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel12.setText("Quantity: ");
+
+        jButtonAddOven1.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddOven1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddOven1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddOven1.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelOven1Layout = new javax.swing.GroupLayout(jPanelOven1);
+        jPanelOven1.setLayout(jPanelOven1Layout);
+        jPanelOven1Layout.setHorizontalGroup(
+            jPanelOven1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOven1Layout.createSequentialGroup()
+                .addGroup(jPanelOven1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelOven1Layout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(jLabel8oven1, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelOven1Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanelOven1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabelovenName1)
+                            .addComponent(jLabelOvenprice1)
+                            .addGroup(jPanelOven1Layout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonAddOven1)
                                 .addGap(21, 21, 21)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanelOvenLayout.setVerticalGroup(
-            jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelOvenLayout.createSequentialGroup()
+        jPanelOven1Layout.setVerticalGroup(
+            jPanelOven1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelOven1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8oven, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel8oven1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelovenName)
+                .addComponent(jLabelovenName1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabelOvenprice)
+                .addComponent(jLabelOvenprice1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanelOvenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonOvenCart))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addGroup(jPanelOven1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddOven1))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
-        jPanelToaster.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelToaster.setPreferredSize(new java.awt.Dimension(400, 300));
+        jPanelToaster1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelToaster1.setPreferredSize(new java.awt.Dimension(400, 300));
 
-        jLabeltoaster.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/toaster (1).png"))); // NOI18N
-        jLabeltoaster.setText("     ");
+        jLabeltoaster1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/toaster (1).png"))); // NOI18N
+        jLabeltoaster1.setText("     ");
 
-        jLabeltoasterName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabeltoasterName.setForeground(new java.awt.Color(0, 102, 204));
-        jLabeltoasterName.setText("Anex Deluxe 2 Slice Toaster,730-870 W, 220-240V, Black");
+        jLabeltoasterName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabeltoasterName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabeltoasterName1.setText("Anex Deluxe 2 Slice Toaster,730-870 W, 220-240V, Black");
 
-        jLabelToasterprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelToasterprice.setText("Rs. 8,288");
+        jLabelToasterprice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelToasterprice1.setText("Rs. 8,288");
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel15.setText("Quantity:");
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel16.setText("Quantity:");
 
-        jButton4ToasterCart.setBackground(new java.awt.Color(179, 48, 75)
+        jButtonAddToaster1.setBackground(new java.awt.Color(179, 48, 75)
         );
-        jButton4ToasterCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton4ToasterCart.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4ToasterCart.setText("Add to Cart");
-        jButton4ToasterCart.addActionListener(this::jButton4ToasterCartActionPerformed);
+        jButtonAddToaster1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddToaster1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddToaster1.setText("Add to Cart");
+        jButtonAddToaster1.addActionListener(this::jButtonAddToaster1ActionPerformed);
 
-        javax.swing.GroupLayout jPanelToasterLayout = new javax.swing.GroupLayout(jPanelToaster);
-        jPanelToaster.setLayout(jPanelToasterLayout);
-        jPanelToasterLayout.setHorizontalGroup(
-            jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelToasterLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelToaster1Layout = new javax.swing.GroupLayout(jPanelToaster1);
+        jPanelToaster1.setLayout(jPanelToaster1Layout);
+        jPanelToaster1Layout.setHorizontalGroup(
+            jPanelToaster1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelToaster1Layout.createSequentialGroup()
                 .addGap(83, 83, 83)
-                .addComponent(jLabeltoaster, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabeltoaster1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelToasterLayout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
-                .addGroup(jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabeltoasterName)
-                    .addGroup(jPanelToasterLayout.createSequentialGroup()
-                        .addGroup(jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabelToasterprice, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelToaster1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanelToaster1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabeltoasterName1)
+                    .addGroup(jPanelToaster1Layout.createSequentialGroup()
+                        .addGroup(jPanelToaster1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabelToasterprice1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSpinner11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4ToasterCart)))
+                        .addComponent(jButtonAddToaster1)))
                 .addGap(29, 29, 29))
         );
-        jPanelToasterLayout.setVerticalGroup(
-            jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelToasterLayout.createSequentialGroup()
-                .addComponent(jLabeltoaster, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPanelToaster1Layout.setVerticalGroup(
+            jPanelToaster1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelToaster1Layout.createSequentialGroup()
+                .addComponent(jLabeltoaster1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
-                .addComponent(jLabeltoasterName)
+                .addComponent(jLabeltoasterName1)
                 .addGap(12, 12, 12)
-                .addComponent(jLabelToasterprice)
+                .addComponent(jLabelToasterprice1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanelToasterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15)
-                    .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4ToasterCart))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addGroup(jPanelToaster1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(jSpinner11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddToaster1))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jPanelJuicer.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelJuicer.setMinimumSize(new java.awt.Dimension(400, 300));
-        jPanelJuicer.setPreferredSize(new java.awt.Dimension(400, 300));
+        jPanelJuicer1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelJuicer1.setMinimumSize(new java.awt.Dimension(400, 300));
 
-        jLabel16juicer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/juicer (1).png"))); // NOI18N
-        jLabel16juicer.setText("    ");
+        jLabelJuicerIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/juicer (1).png"))); // NOI18N
+        jLabelJuicerIcon1.setText("    ");
 
-        jLabeljuicerName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabeljuicerName.setForeground(new java.awt.Color(0, 102, 204));
-        jLabeljuicerName.setText("Anex Deluxe Juicer, 400W, 220-240V, 800ml, Black");
+        jLabeljuicerName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabeljuicerName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabeljuicerName1.setText("Anex Deluxe Juicer, 400W, 220-240V, 800ml, Black");
 
-        jLabelJuicerprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelJuicerprice.setText("Rs. 13,983 ");
+        jLabelJuicerprice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelJuicerprice1.setText("Rs. 13,983 ");
 
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel19.setText("Quantity:");
+        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel20.setText("Quantity:");
 
-        jButtonJuicerCart.setBackground(new java.awt.Color(179, 48, 75)
+        jButtonAddJuicer1.setBackground(new java.awt.Color(179, 48, 75)
         );
-        jButtonJuicerCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButtonJuicerCart.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonJuicerCart.setText("Add to Cart");
+        jButtonAddJuicer1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddJuicer1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddJuicer1.setText("Add to Cart");
 
-        javax.swing.GroupLayout jPanelJuicerLayout = new javax.swing.GroupLayout(jPanelJuicer);
-        jPanelJuicer.setLayout(jPanelJuicerLayout);
-        jPanelJuicerLayout.setHorizontalGroup(
-            jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJuicerLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelJuicer1Layout = new javax.swing.GroupLayout(jPanelJuicer1);
+        jPanelJuicer1.setLayout(jPanelJuicer1Layout);
+        jPanelJuicer1Layout.setHorizontalGroup(
+            jPanelJuicer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJuicer1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel16juicer, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelJuicerIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(88, 88, 88))
-            .addGroup(jPanelJuicerLayout.createSequentialGroup()
-                .addGroup(jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelJuicerLayout.createSequentialGroup()
+            .addGroup(jPanelJuicer1Layout.createSequentialGroup()
+                .addGroup(jPanelJuicer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelJuicer1Layout.createSequentialGroup()
                         .addGap(47, 47, 47)
-                        .addComponent(jLabeljuicerName))
-                    .addGroup(jPanelJuicerLayout.createSequentialGroup()
+                        .addComponent(jLabeljuicerName1))
+                    .addGroup(jPanelJuicer1Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
-                        .addGroup(jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelJuicerprice)
-                            .addGroup(jPanelJuicerLayout.createSequentialGroup()
-                                .addComponent(jLabel19)
+                        .addGroup(jPanelJuicer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelJuicerprice1)
+                            .addGroup(jPanelJuicer1Layout.createSequentialGroup()
+                                .addComponent(jLabel20)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
-                                .addComponent(jButtonJuicerCart)))))
+                                .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonAddJuicer1)))))
                 .addGap(33, 33, 33))
         );
-        jPanelJuicerLayout.setVerticalGroup(
-            jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelJuicerLayout.createSequentialGroup()
+        jPanelJuicer1Layout.setVerticalGroup(
+            jPanelJuicer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelJuicer1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel16juicer, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelJuicerIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabeljuicerName)
+                .addComponent(jLabeljuicerName1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelJuicerprice)
+                .addComponent(jLabelJuicerprice1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanelJuicerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
-                    .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonJuicerCart))
+                .addGroup(jPanelJuicer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(jSpinner12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddJuicer1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanelAirfryer.setBackground(new java.awt.Color(255, 255, 255));
-        jPanelAirfryer.setPreferredSize(new java.awt.Dimension(400, 300));
+        jPanelAirfryer1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelAirfryer1.setPreferredSize(new java.awt.Dimension(400, 300));
 
-        jLabel20airfryer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/airfryer (1).png"))); // NOI18N
-        jLabel20airfryer.setText("    ");
+        jLabelAirfryerIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/airfryer (1).png"))); // NOI18N
+        jLabelAirfryerIcon1.setText("    ");
 
-        jLabelairfryerName.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelairfryerName.setForeground(new java.awt.Color(0, 102, 204));
-        jLabelairfryerName.setText("Nutricook Air Fryer Slim, 1500W, 5-Liters");
+        jLabelairfryerName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelairfryerName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelairfryerName1.setText("Nutricook Air Fryer Slim, 1500W, 5-Liters");
 
-        jLabelAirfryerprice.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabelAirfryerprice.setText("Rs. 63,999");
+        jLabelAirfryerprice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelAirfryerprice1.setText("Rs. 63,999");
 
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel23.setText("Quantity:");
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jLabel24.setText("Quantity:");
 
-        jButtonAirfryerCart.setBackground(new java.awt.Color(179, 48, 75)
+        jButtonAirfryerCart1.setBackground(new java.awt.Color(179, 48, 75)
         );
-        jButtonAirfryerCart.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButtonAirfryerCart.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonAirfryerCart.setText("Add to Cart");
-        jButtonAirfryerCart.addActionListener(this::jButtonAirfryerCartActionPerformed);
+        jButtonAirfryerCart1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAirfryerCart1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAirfryerCart1.setText("Add to Cart");
+        jButtonAirfryerCart1.addActionListener(this::jButtonAirfryerCart1ActionPerformed);
 
-        javax.swing.GroupLayout jPanelAirfryerLayout = new javax.swing.GroupLayout(jPanelAirfryer);
-        jPanelAirfryer.setLayout(jPanelAirfryerLayout);
-        jPanelAirfryerLayout.setHorizontalGroup(
-            jPanelAirfryerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelAirfryerLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelAirfryer1Layout = new javax.swing.GroupLayout(jPanelAirfryer1);
+        jPanelAirfryer1.setLayout(jPanelAirfryer1Layout);
+        jPanelAirfryer1Layout.setHorizontalGroup(
+            jPanelAirfryer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelAirfryer1Layout.createSequentialGroup()
                 .addGap(108, 108, 108)
-                .addComponent(jLabel20airfryer, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelAirfryerIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(115, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelAirfryerLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelAirfryer1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabelairfryerName)
+                .addComponent(jLabelairfryerName1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanelAirfryerLayout.createSequentialGroup()
+            .addGroup(jPanelAirfryer1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(jPanelAirfryerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelAirfryerLayout.createSequentialGroup()
-                        .addComponent(jLabelAirfryerprice)
+                .addGroup(jPanelAirfryer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelAirfryer1Layout.createSequentialGroup()
+                        .addComponent(jLabelAirfryerprice1)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanelAirfryerLayout.createSequentialGroup()
-                        .addComponent(jLabel23)
+                    .addGroup(jPanelAirfryer1Layout.createSequentialGroup()
+                        .addComponent(jLabel24)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSpinner13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonAirfryerCart)
+                        .addComponent(jButtonAirfryerCart1)
                         .addGap(38, 38, 38))))
         );
-        jPanelAirfryerLayout.setVerticalGroup(
-            jPanelAirfryerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelAirfryerLayout.createSequentialGroup()
+        jPanelAirfryer1Layout.setVerticalGroup(
+            jPanelAirfryer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelAirfryer1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel20airfryer)
+                .addComponent(jLabelAirfryerIcon1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelairfryerName)
+                .addComponent(jLabelairfryerName1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelAirfryerprice)
+                .addComponent(jLabelAirfryerprice1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanelAirfryerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonAirfryerCart))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addGroup(jPanelAirfryer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(jSpinner13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAirfryerCart1))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanelproductsLayout = new javax.swing.GroupLayout(jPanelproducts);
-        jPanelproducts.setLayout(jPanelproductsLayout);
-        jPanelproductsLayout.setHorizontalGroup(
-            jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelproductsLayout.createSequentialGroup()
-                .addGap(373, 373, 373)
-                .addComponent(jLabelhomeappliances)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanelproductsLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelproducts2Layout = new javax.swing.GroupLayout(jPanelproducts2);
+        jPanelproducts2.setLayout(jPanelproducts2Layout);
+        jPanelproducts2Layout.setHorizontalGroup(
+            jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelproducts2Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanelOven, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
-                        .addComponent(jPanelLED, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE))
-                    .addComponent(jPanelJuicer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanelToaster, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6Dispenser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelAirfryer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jPanelOven1, javax.swing.GroupLayout.DEFAULT_SIZE, 426, Short.MAX_VALUE)
+                        .addComponent(jPanelTV2, javax.swing.GroupLayout.DEFAULT_SIZE, 426, Short.MAX_VALUE))
+                    .addComponent(jPanelJuicer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelToaster1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6Dispenser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelAirfryer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelproducts2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelhomeappliances2)
+                .addGap(327, 327, 327))
         );
-        jPanelproductsLayout.setVerticalGroup(
-            jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelproductsLayout.createSequentialGroup()
+        jPanelproducts2Layout.setVerticalGroup(
+            jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelproducts2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabelhomeappliances)
-                .addGap(18, 18, 18)
-                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel6Dispenser, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE)
-                    .addComponent(jPanelLED, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE))
+                .addComponent(jLabelhomeappliances2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel6Dispenser1, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE)
+                    .addComponent(jPanelTV2, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE))
                 .addGap(36, 36, 36)
-                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanelOven, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanelToaster, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelOven1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelToaster1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(43, 43, 43)
-                .addGroup(jPanelproductsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanelJuicer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanelAirfryer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addGroup(jPanelproducts2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanelJuicer1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanelAirfryer1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
+        jPanelBeautyproducts1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBeautyproducts1.setPreferredSize(new java.awt.Dimension(800, 1193));
+
+        jPanelPerfume1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelPerfume1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelPerfumeIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/perfume (1).png"))); // NOI18N
+        jLabelPerfumeIcon1.setText("  ");
+
+        jLabelPerfumeName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelPerfumeName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelPerfumeName1.setText("Fariis Rosado Secret, Eau De Parfum, For Women, 100ml");
+
+        jLabelPerfumePrice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelPerfumePrice1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelPerfumePrice1.setText("Rs. 4,180 ");
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setText("Quantity:");
+
+        jButtonAddPerfume1.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddPerfume1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddPerfume1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddPerfume1.setText("Add to Cart");
+        jButtonAddPerfume1.addActionListener(this::jButtonAddPerfume1ActionPerformed);
+
+        javax.swing.GroupLayout jPanelPerfume1Layout = new javax.swing.GroupLayout(jPanelPerfume1);
+        jPanelPerfume1.setLayout(jPanelPerfume1Layout);
+        jPanelPerfume1Layout.setHorizontalGroup(
+            jPanelPerfume1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelPerfume1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSpinnerPerfume1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonAddPerfume1)
+                .addGap(43, 43, 43))
+            .addGroup(jPanelPerfume1Layout.createSequentialGroup()
+                .addGroup(jPanelPerfume1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelPerfume1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabelPerfumeName1))
+                    .addGroup(jPanelPerfume1Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabelPerfumePrice1))
+                    .addGroup(jPanelPerfume1Layout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(jLabelPerfumeIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+        jPanelPerfume1Layout.setVerticalGroup(
+            jPanelPerfume1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelPerfume1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabelPerfumeIcon1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelPerfumeName1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelPerfumePrice1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanelPerfume1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jSpinnerPerfume1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10)
+                    .addComponent(jButtonAddPerfume1))
+                .addGap(36, 36, 36))
+        );
+
+        jLabel6.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("Beauty Products");
+
+        jPanelHairserum1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelHairserum1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelHairserumIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/hairserum (2).png"))); // NOI18N
+        jLabelHairserumIcon1.setText("    ");
+
+        jLabelHairserumName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelHairserumName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelHairserumName1.setText("Loreal Paris Elvive Frizz Killer Hair Serum 100m");
+
+        jLabelHairserumPrice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelHairserumPrice1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelHairserumPrice1.setText("Rs2,900");
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel18.setText("Quantity:");
+
+        jButtonHairserumCart1.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonHairserumCart1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonHairserumCart1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonHairserumCart1.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelHairserum1Layout = new javax.swing.GroupLayout(jPanelHairserum1);
+        jPanelHairserum1.setLayout(jPanelHairserum1Layout);
+        jPanelHairserum1Layout.setHorizontalGroup(
+            jPanelHairserum1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelHairserum1Layout.createSequentialGroup()
+                .addGroup(jPanelHairserum1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelHairserum1Layout.createSequentialGroup()
+                        .addGap(159, 159, 159)
+                        .addComponent(jLabelHairserumIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelHairserum1Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabelHairserumName1)))
+                .addContainerGap(53, Short.MAX_VALUE))
+            .addGroup(jPanelHairserum1Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(jPanelHairserum1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelHairserum1Layout.createSequentialGroup()
+                        .addComponent(jLabelHairserumPrice1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelHairserum1Layout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSpinnerHairserum1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonHairserumCart1)
+                        .addGap(41, 41, 41))))
+        );
+        jPanelHairserum1Layout.setVerticalGroup(
+            jPanelHairserum1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelHairserum1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelHairserumIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelHairserumName1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelHairserumPrice1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelHairserum1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(jSpinnerHairserum1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonHairserumCart1))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+
+        jPanellipstick1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanellipstick1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelLipstickIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/lipstick (1).png"))); // NOI18N
+        jLabelLipstickIcon1.setText("    ");
+
+        jLabellipstickName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabellipstickName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabellipstickName1.setText("Flormar Sheer Up Lipstick, 004 Warm Peach, 3g");
+
+        jLabelLipstickPrice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelLipstickPrice1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelLipstickPrice1.setText("Rs. 1,851");
+
+        jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel26.setText("Quantity:");
+
+        jButtonAddLipstick1.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddLipstick1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddLipstick1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddLipstick1.setText("Add to Cart");
+        jButtonAddLipstick1.addActionListener(this::jButtonAddLipstick1ActionPerformed);
+
+        javax.swing.GroupLayout jPanellipstick1Layout = new javax.swing.GroupLayout(jPanellipstick1);
+        jPanellipstick1.setLayout(jPanellipstick1Layout);
+        jPanellipstick1Layout.setHorizontalGroup(
+            jPanellipstick1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanellipstick1Layout.createSequentialGroup()
+                .addGap(143, 143, 143)
+                .addComponent(jLabelLipstickIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanellipstick1Layout.createSequentialGroup()
+                .addGroup(jPanellipstick1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanellipstick1Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanellipstick1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelLipstickPrice1)
+                            .addGroup(jPanellipstick1Layout.createSequentialGroup()
+                                .addComponent(jLabel26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerLipstick1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonAddLipstick1))))
+                    .addGroup(jPanellipstick1Layout.createSequentialGroup()
+                        .addContainerGap(41, Short.MAX_VALUE)
+                        .addComponent(jLabellipstickName1)))
+                .addGap(40, 40, 40))
+        );
+        jPanellipstick1Layout.setVerticalGroup(
+            jPanellipstick1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanellipstick1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelLipstickIcon1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabellipstickName1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelLipstickPrice1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanellipstick1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(jSpinnerLipstick1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddLipstick1))
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+
+        jPanelEyeshadow1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelEyeshadow1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelEyeshadowIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/eyeshadow (4).png"))); // NOI18N
+        jLabelEyeshadowIcon1.setText("  ");
+
+        jLabelEyeshadowName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelEyeshadowName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelEyeshadowName1.setText("Junaid Jamshed Note Eyeshadow Palette");
+
+        jLabelEyeshadowPrice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelEyeshadowPrice1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelEyeshadowPrice1.setText("Rs. 3,500");
+
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel30.setText("Quantity:");
+
+        jButtonEyeshadowCart1.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonEyeshadowCart1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonEyeshadowCart1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonEyeshadowCart1.setText("Add to Cart");
+        jButtonEyeshadowCart1.addActionListener(this::jButtonEyeshadowCart1ActionPerformed);
+
+        javax.swing.GroupLayout jPanelEyeshadow1Layout = new javax.swing.GroupLayout(jPanelEyeshadow1);
+        jPanelEyeshadow1.setLayout(jPanelEyeshadow1Layout);
+        jPanelEyeshadow1Layout.setHorizontalGroup(
+            jPanelEyeshadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelEyeshadow1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelEyeshadowIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(104, 104, 104))
+            .addGroup(jPanelEyeshadow1Layout.createSequentialGroup()
+                .addGroup(jPanelEyeshadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelEyeshadow1Layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addComponent(jLabelEyeshadowName1))
+                    .addGroup(jPanelEyeshadow1Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(jPanelEyeshadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelEyeshadowPrice1)
+                            .addGroup(jPanelEyeshadow1Layout.createSequentialGroup()
+                                .addComponent(jLabel30)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerEyeshadow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
+                                .addComponent(jButtonEyeshadowCart1)))))
+                .addGap(35, 35, 35))
+        );
+        jPanelEyeshadow1Layout.setVerticalGroup(
+            jPanelEyeshadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelEyeshadow1Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabelEyeshadowIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelEyeshadowName1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelEyeshadowPrice1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelEyeshadow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel30)
+                    .addComponent(jSpinnerEyeshadow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonEyeshadowCart1))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+
+        jPanelConcealer1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelConcealer1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelConcealerIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/concealer (1).png"))); // NOI18N
+        jLabelConcealerIcon1.setText("   ");
+
+        jLabelConcealerName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelConcealerName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelConcealerName1.setText("Maybelline New York Concealer - 122 Sand");
+
+        jLabelConcealerPrice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelConcealerPrice1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelConcealerPrice1.setText("Rs.3,799");
+
+        jLabel36.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel36.setText("Quantity:");
+
+        jButtonAddConcealer1.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddConcealer1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddConcealer1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddConcealer1.setText("Add to Cart");
+        jButtonAddConcealer1.addActionListener(this::jButtonAddConcealer1ActionPerformed);
+
+        javax.swing.GroupLayout jPanelConcealer1Layout = new javax.swing.GroupLayout(jPanelConcealer1);
+        jPanelConcealer1.setLayout(jPanelConcealer1Layout);
+        jPanelConcealer1Layout.setHorizontalGroup(
+            jPanelConcealer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelConcealer1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelConcealerIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(109, 109, 109))
+            .addGroup(jPanelConcealer1Layout.createSequentialGroup()
+                .addGroup(jPanelConcealer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelConcealer1Layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(jLabelConcealerName1))
+                    .addGroup(jPanelConcealer1Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanelConcealer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelConcealerPrice1)
+                            .addGroup(jPanelConcealer1Layout.createSequentialGroup()
+                                .addComponent(jLabel36)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerConcealer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                                .addComponent(jButtonAddConcealer1)))))
+                .addGap(40, 40, 40))
+        );
+        jPanelConcealer1Layout.setVerticalGroup(
+            jPanelConcealer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelConcealer1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelConcealerIcon1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelConcealerName1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelConcealerPrice1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelConcealer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel36)
+                    .addComponent(jSpinnerConcealer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddConcealer1))
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        jPanelMascara1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelMascara1.setPreferredSize(new java.awt.Dimension(400, 300));
+
+        jLabelMascaraIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/package1/mascara (2).png"))); // NOI18N
+        jLabelMascaraIcon1.setText("  ");
+
+        jLabelMascaraName1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelMascaraName1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabelMascaraName1.setText("Junaid Jamshed Note Extra Volume Mascara, 12ml");
+
+        jLabelMascaraPrice1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelMascaraPrice1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelMascaraPrice1.setText("Rs. 2,700");
+
+        jLabel39.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel39.setText("Quantity:");
+
+        jButtonAddMascara1.setBackground(new java.awt.Color(179, 48, 75));
+        jButtonAddMascara1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButtonAddMascara1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAddMascara1.setText("Add to Cart");
+
+        javax.swing.GroupLayout jPanelMascara1Layout = new javax.swing.GroupLayout(jPanelMascara1);
+        jPanelMascara1.setLayout(jPanelMascara1Layout);
+        jPanelMascara1Layout.setHorizontalGroup(
+            jPanelMascara1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMascara1Layout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addComponent(jLabelMascaraName1)
+                .addGap(32, 32, 32))
+            .addGroup(jPanelMascara1Layout.createSequentialGroup()
+                .addGroup(jPanelMascara1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMascara1Layout.createSequentialGroup()
+                        .addGap(145, 145, 145)
+                        .addComponent(jLabelMascaraIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelMascara1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanelMascara1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelMascaraPrice1)
+                            .addGroup(jPanelMascara1Layout.createSequentialGroup()
+                                .addComponent(jLabel39)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinnerMascara1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonAddMascara1)))))
+                .addGap(42, 42, 42))
+        );
+        jPanelMascara1Layout.setVerticalGroup(
+            jPanelMascara1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMascara1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelMascaraIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabelMascaraName1)
+                .addGap(18, 18, 18)
+                .addComponent(jLabelMascaraPrice1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelMascara1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(jSpinnerMascara1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonAddMascara1))
+                .addContainerGap(27, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanelBeautyproducts1Layout = new javax.swing.GroupLayout(jPanelBeautyproducts1);
+        jPanelBeautyproducts1.setLayout(jPanelBeautyproducts1Layout);
+        jPanelBeautyproducts1Layout.setHorizontalGroup(
+            jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBeautyproducts1Layout.createSequentialGroup()
+                .addGroup(jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelBeautyproducts1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanelPerfume1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelBeautyproducts1Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanelConcealer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanellipstick1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addGroup(jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelMascara1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelEyeshadow1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelHairserum1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50))
+            .addGroup(jPanelBeautyproducts1Layout.createSequentialGroup()
+                .addGap(355, 355, 355)
+                .addComponent(jLabel6)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanelBeautyproducts1Layout.setVerticalGroup(
+            jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBeautyproducts1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel6)
+                .addGap(48, 48, 48)
+                .addGroup(jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanellipstick1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelEyeshadow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelConcealer1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelMascara1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(59, 59, 59)
+                .addGroup(jPanelBeautyproducts1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelPerfume1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelHairserum1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -682,14 +2139,33 @@ public class Home extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanelproducts, javax.swing.GroupLayout.PREFERRED_SIZE, 945, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 25, Short.MAX_VALUE))
+                .addComponent(jPanelFoodItems, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jPanelBeautyproducts1, javax.swing.GroupLayout.PREFERRED_SIZE, 902, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanelproducts2, javax.swing.GroupLayout.PREFERRED_SIZE, 902, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanelBooks, javax.swing.GroupLayout.PREFERRED_SIZE, 922, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanelproducts, javax.swing.GroupLayout.PREFERRED_SIZE, 1110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 319, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jPanelproducts2, javax.swing.GroupLayout.PREFERRED_SIZE, 1087, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelBeautyproducts1, javax.swing.GroupLayout.PREFERRED_SIZE, 1079, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanelFoodItems, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanelBooks, javax.swing.GroupLayout.PREFERRED_SIZE, 1124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(332, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel3);
@@ -700,10 +2176,10 @@ public class Home extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 946, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1150, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 958, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1148, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -712,8 +2188,8 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGap(6, 6, 6)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 4696, Short.MAX_VALUE)
                         .addContainerGap())))
         );
 
@@ -721,13 +2197,11 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1148, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 4764, Short.MAX_VALUE)
         );
 
         pack();
@@ -741,25 +2215,65 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCartActionPerformed
 
-    private void jButtonbeautyItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonbeautyItemsActionPerformed
+    private void jButtonBeautyItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBeautyItemsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonbeautyItemsActionPerformed
+    }//GEN-LAST:event_jButtonBeautyItemsActionPerformed
 
     private void jButtonfoodItemsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonfoodItemsActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonfoodItemsActionPerformed
 
-    private void jButtonDispernserCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDispernserCartActionPerformed
+    private void jButtonAddConcealer1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddConcealer1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonDispernserCartActionPerformed
+    }//GEN-LAST:event_jButtonAddConcealer1ActionPerformed
 
-    private void jButton4ToasterCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ToasterCartActionPerformed
+    private void jButtonEyeshadowCart1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEyeshadowCart1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ToasterCartActionPerformed
+    }//GEN-LAST:event_jButtonEyeshadowCart1ActionPerformed
 
-    private void jButtonAirfryerCartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAirfryerCartActionPerformed
+    private void jButtonAddLipstick1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddLipstick1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonAirfryerCartActionPerformed
+    }//GEN-LAST:event_jButtonAddLipstick1ActionPerformed
+
+    private void jButtonAddPerfume1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddPerfume1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAddPerfume1ActionPerformed
+
+    private void jButtonAirfryerCart1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAirfryerCart1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAirfryerCart1ActionPerformed
+
+    private void jButtonAddToaster1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddToaster1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAddToaster1ActionPerformed
+
+    private void jButtonAddDispenser1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddDispenser1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAddDispenser1ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButtonBook4CartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBook4CartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonBook4CartActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButtonBook2cartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBook2cartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonBook2cartActionPerformed
+
+    private void jButtonAddEggsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddEggsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAddEggsActionPerformed
+
+    private void jButtonButterAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonButterAddActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonButterAddActionPerformed
 
     /**
      * @param args the command line arguments
@@ -787,66 +2301,198 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton4ToasterCart;
-    private javax.swing.JButton jButtonAirfryerCart;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButtonAddBread;
+    private javax.swing.JButton jButtonAddConcealer1;
+    private javax.swing.JButton jButtonAddDispenser1;
+    private javax.swing.JButton jButtonAddEggs;
+    private javax.swing.JButton jButtonAddJuicer1;
+    private javax.swing.JButton jButtonAddLipstick1;
+    private javax.swing.JButton jButtonAddMascara1;
+    private javax.swing.JButton jButtonAddOven1;
+    private javax.swing.JButton jButtonAddPerfume1;
+    private javax.swing.JButton jButtonAddTV2;
+    private javax.swing.JButton jButtonAddTea;
+    private javax.swing.JButton jButtonAddToaster1;
+    private javax.swing.JButton jButtonAirfryerCart1;
+    private javax.swing.JButton jButtonBeautyItems;
+    private javax.swing.JButton jButtonBook1Cart;
+    private javax.swing.JButton jButtonBook2cart;
+    private javax.swing.JButton jButtonBook4Cart;
+    private javax.swing.JButton jButtonBook6Cart;
+    private javax.swing.JButton jButtonButterAdd;
     private javax.swing.JButton jButtonCart;
-    private javax.swing.JButton jButtonDispernserCart;
-    private javax.swing.JButton jButtonJuicerCart;
-    private javax.swing.JButton jButtonOvenCart;
+    private javax.swing.JButton jButtonEyeshadowCart1;
+    private javax.swing.JButton jButtonHairserumCart1;
+    private javax.swing.JButton jButtonMilkCart;
     private javax.swing.JButton jButtonSearch;
-    private javax.swing.JButton jButtonTVCart;
-    private javax.swing.JButton jButtonbeautyItems;
+    private javax.swing.JButton jButtonYogurtAdd;
     private javax.swing.JButton jButtonbooks;
     private javax.swing.JButton jButtonfoodItems;
     private javax.swing.JButton jButtonhomeApplainces;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16juicer;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel20airfryer;
-    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel2UserName;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8oven;
-    private javax.swing.JLabel jLabelAirfryerprice;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel8oven1;
+    private javax.swing.JLabel jLabelAirfryerIcon1;
+    private javax.swing.JLabel jLabelAirfryerprice1;
+    private javax.swing.JLabel jLabelBook1Icon;
+    private javax.swing.JLabel jLabelBook1Name;
+    private javax.swing.JLabel jLabelBook1Price;
+    private javax.swing.JLabel jLabelBook2Icon;
+    private javax.swing.JLabel jLabelBook2Name;
+    private javax.swing.JLabel jLabelBook2Price;
+    private javax.swing.JLabel jLabelBook3Icon;
+    private javax.swing.JLabel jLabelBook3Name;
+    private javax.swing.JLabel jLabelBook3Price;
+    private javax.swing.JLabel jLabelBook4Icon;
+    private javax.swing.JLabel jLabelBook4Name;
+    private javax.swing.JLabel jLabelBook4Price;
+    private javax.swing.JLabel jLabelBook5Icon;
+    private javax.swing.JLabel jLabelBook5Name;
+    private javax.swing.JLabel jLabelBook5Price;
+    private javax.swing.JLabel jLabelBook6Icon;
+    private javax.swing.JLabel jLabelBook6Name;
+    private javax.swing.JLabel jLabelBook6Price;
+    private javax.swing.JLabel jLabelBooks;
+    private javax.swing.JLabel jLabelBreadIcon;
+    private javax.swing.JLabel jLabelBreadName;
+    private javax.swing.JLabel jLabelBreadPrice;
+    private javax.swing.JLabel jLabelButrerPrice;
+    private javax.swing.JLabel jLabelButterIcon;
+    private javax.swing.JLabel jLabelButterName;
     private javax.swing.JLabel jLabelCategories;
-    private javax.swing.JLabel jLabelDispenserprice;
-    private javax.swing.JLabel jLabelJuicerprice;
-    private javax.swing.JLabel jLabelOvenprice;
-    private javax.swing.JLabel jLabelTVname;
-    private javax.swing.JLabel jLabelTVprice;
-    private javax.swing.JLabel jLabelToasterprice;
+    private javax.swing.JLabel jLabelConcealerIcon1;
+    private javax.swing.JLabel jLabelConcealerName1;
+    private javax.swing.JLabel jLabelConcealerPrice1;
+    private javax.swing.JLabel jLabelDispenserprice1;
+    private javax.swing.JLabel jLabelEggsIcon;
+    private javax.swing.JLabel jLabelEggsName;
+    private javax.swing.JLabel jLabelEggsPrice;
+    private javax.swing.JLabel jLabelEyeshadowIcon1;
+    private javax.swing.JLabel jLabelEyeshadowName1;
+    private javax.swing.JLabel jLabelEyeshadowPrice1;
+    private javax.swing.JLabel jLabelFoodItems;
+    private javax.swing.JLabel jLabelHairserumIcon1;
+    private javax.swing.JLabel jLabelHairserumName1;
+    private javax.swing.JLabel jLabelHairserumPrice1;
+    private javax.swing.JLabel jLabelJuicerIcon1;
+    private javax.swing.JLabel jLabelJuicerprice1;
+    private javax.swing.JLabel jLabelLipstickIcon1;
+    private javax.swing.JLabel jLabelLipstickPrice1;
+    private javax.swing.JLabel jLabelMascaraIcon1;
+    private javax.swing.JLabel jLabelMascaraName1;
+    private javax.swing.JLabel jLabelMascaraPrice1;
+    private javax.swing.JLabel jLabelMilkIcon;
+    private javax.swing.JLabel jLabelMilkName;
+    private javax.swing.JLabel jLabelMilkPrice;
+    private javax.swing.JLabel jLabelOvenprice1;
+    private javax.swing.JLabel jLabelPerfumeIcon1;
+    private javax.swing.JLabel jLabelPerfumeName1;
+    private javax.swing.JLabel jLabelPerfumePrice1;
+    private javax.swing.JLabel jLabelTVIccon2;
+    private javax.swing.JLabel jLabelTVname2;
+    private javax.swing.JLabel jLabelTVprice2;
+    private javax.swing.JLabel jLabelTeaIcon;
+    private javax.swing.JLabel jLabelTeaName;
+    private javax.swing.JLabel jLabelTeaPrice;
+    private javax.swing.JLabel jLabelToasterprice1;
     private javax.swing.JLabel jLabelUsericon;
-    private javax.swing.JLabel jLabelairfryerName;
-    private javax.swing.JLabel jLabeldispenser;
-    private javax.swing.JLabel jLabeldispenserName;
-    private javax.swing.JLabel jLabelhomeappliances;
-    private javax.swing.JLabel jLabeljuicerName;
-    private javax.swing.JLabel jLabelledTV;
+    private javax.swing.JLabel jLabelYogurtIcon;
+    private javax.swing.JLabel jLabelYogurtName;
+    private javax.swing.JLabel jLabelYogutPrice;
+    private javax.swing.JLabel jLabelairfryerName1;
+    private javax.swing.JLabel jLabeldispenser1;
+    private javax.swing.JLabel jLabeldispenserName1;
+    private javax.swing.JLabel jLabelhomeappliances2;
+    private javax.swing.JLabel jLabeljuicerName1;
+    private javax.swing.JLabel jLabellipstickName1;
     private javax.swing.JLabel jLabelmenubarIcon;
     private javax.swing.JLabel jLabelordifyLogo;
-    private javax.swing.JLabel jLabelovenName;
-    private javax.swing.JLabel jLabeltoaster;
-    private javax.swing.JLabel jLabeltoasterName;
+    private javax.swing.JLabel jLabelovenName1;
+    private javax.swing.JLabel jLabeltoaster1;
+    private javax.swing.JLabel jLabeltoasterName1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6Dispenser;
-    private javax.swing.JPanel jPanelAirfryer;
-    private javax.swing.JPanel jPanelJuicer;
-    private javax.swing.JPanel jPanelLED;
-    private javax.swing.JPanel jPanelOven;
-    private javax.swing.JPanel jPanelToaster;
-    private javax.swing.JPanel jPanelproducts;
+    private javax.swing.JPanel jPanel6Dispenser1;
+    private javax.swing.JPanel jPanelAirfryer1;
+    private javax.swing.JPanel jPanelBeautyproducts1;
+    private javax.swing.JPanel jPanelBook1;
+    private javax.swing.JPanel jPanelBook2;
+    private javax.swing.JPanel jPanelBook3;
+    private javax.swing.JPanel jPanelBook4;
+    private javax.swing.JPanel jPanelBook5;
+    private javax.swing.JPanel jPanelBook6;
+    private javax.swing.JPanel jPanelBooks;
+    private javax.swing.JPanel jPanelBread;
+    private javax.swing.JPanel jPanelButter;
+    private javax.swing.JPanel jPanelConcealer1;
+    private javax.swing.JPanel jPanelEggs;
+    private javax.swing.JPanel jPanelEyeshadow1;
+    private javax.swing.JPanel jPanelFoodItems;
+    private javax.swing.JPanel jPanelHairserum1;
+    private javax.swing.JPanel jPanelJuicer1;
+    private javax.swing.JPanel jPanelMascara1;
+    private javax.swing.JPanel jPanelMilk;
+    private javax.swing.JPanel jPanelOven1;
+    private javax.swing.JPanel jPanelPerfume1;
+    private javax.swing.JPanel jPanelTV2;
+    private javax.swing.JPanel jPanelTea;
+    private javax.swing.JPanel jPanelToaster1;
+    private javax.swing.JPanel jPanelYogurt;
+    private javax.swing.JPanel jPanellipstick1;
+    private javax.swing.JPanel jPanelproducts2;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JSpinner jSpinner2;
-    private javax.swing.JSpinner jSpinner3;
-    private javax.swing.JSpinner jSpinner4;
-    private javax.swing.JSpinner jSpinner5;
-    private javax.swing.JSpinner jSpinner6;
+    private javax.swing.JSpinner jSpinner10;
+    private javax.swing.JSpinner jSpinner11;
+    private javax.swing.JSpinner jSpinner12;
+    private javax.swing.JSpinner jSpinner13;
+    private javax.swing.JSpinner jSpinner8;
+    private javax.swing.JSpinner jSpinner9;
+    private javax.swing.JSpinner jSpinnerBook1;
+    private javax.swing.JSpinner jSpinnerBook2;
+    private javax.swing.JSpinner jSpinnerBook3;
+    private javax.swing.JSpinner jSpinnerBook4;
+    private javax.swing.JSpinner jSpinnerBook5;
+    private javax.swing.JSpinner jSpinnerBook6;
+    private javax.swing.JSpinner jSpinnerBread;
+    private javax.swing.JSpinner jSpinnerButter;
+    private javax.swing.JSpinner jSpinnerConcealer1;
+    private javax.swing.JSpinner jSpinnerEggs;
+    private javax.swing.JSpinner jSpinnerEyeshadow1;
+    private javax.swing.JSpinner jSpinnerHairserum1;
+    private javax.swing.JSpinner jSpinnerLipstick1;
+    private javax.swing.JSpinner jSpinnerMascara1;
+    private javax.swing.JSpinner jSpinnerMilk;
+    private javax.swing.JSpinner jSpinnerPerfume1;
+    private javax.swing.JSpinner jSpinnerTea;
+    private javax.swing.JSpinner jSpinnerYogurt;
     private javax.swing.JTextField txtSearchbar;
     // End of variables declaration//GEN-END:variables
 }
