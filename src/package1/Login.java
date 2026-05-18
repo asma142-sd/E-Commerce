@@ -236,90 +236,66 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
 
-        Connection con =
-        DBConnection.getConnection();
+    Connection con =
+    DBConnection.getConnection();
 
-        if(con == null) {
-
-            JOptionPane.showMessageDialog(
-            this,
-            "Connection is NULL");
-
-        } else {
-
-            JOptionPane.showMessageDialog(
-            this,
-            "Database Connected Successfully");
-        }
-
-    } catch(Exception e) {
+    if(con == null) {
 
         JOptionPane.showMessageDialog(
         this,
-        e.toString());
-
-        e.printStackTrace();
-    }
-        
-        
-        
-        
-        
-       if(emailField.getText().isEmpty()
-    || String.valueOf(passwordField.getPassword()).isEmpty()) {
-
-           
-           
-        JOptionPane.showMessageDialog(
-        this,
-        "Please fill all fields");
+        "Connection is null");
 
         return;
     }
 
-    try {
+    String sql =
+    "SELECT * FROM users WHERE email=? AND password=?";
 
-        Connection con =
-        DBConnection.getConnection();
+    PreparedStatement pst =
+    con.prepareStatement(sql);
 
-        String sql =
-        "SELECT * FROM users WHERE email=? AND password=?";
+    pst.setString(1,
+    emailField.getText());
 
-        PreparedStatement pst =
-        con.prepareStatement(sql);
+    pst.setString(2,
+    String.valueOf(passwordField.getPassword()));
 
-        pst.setString(1,
-        emailField.getText());
+    ResultSet rs =
+    pst.executeQuery();
 
-        pst.setString(2,
-        String.valueOf(passwordField.getPassword()));
+    if(rs.next()) {
 
-        ResultSet rs =
-        pst.executeQuery();
+        UserSession.name =
+        rs.getString("username");
 
-        if(rs.next()) {
+        UserSession.email =
+        rs.getString("email");
 
-            JOptionPane.showMessageDialog(
-            this,
-            "Login Successful");
-
-            new Home().setVisible(true);
-
-            dispose();
-
-        } else {
-
-            JOptionPane.showMessageDialog(
-            this,
-            "Invalid Email or Password");
-        }
-
-    } catch(HeadlessException | SQLException e) {
+        UserSession.country =
+        rs.getString("country");
 
         JOptionPane.showMessageDialog(
         this,
-        e);
+        "Login Successful");
+
+        new Home().setVisible(true);
+
+        dispose();
+
+    } else {
+
+        JOptionPane.showMessageDialog(
+        this,
+        "Wrong Email or Password");
     }
+
+} catch(HeadlessException | SQLException e) {
+
+    JOptionPane.showMessageDialog(
+    this,
+    e);
+}
+        
     }//GEN-LAST:event_lognBtnActionPerformed
 
     private void signupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupBtnActionPerformed

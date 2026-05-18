@@ -2,7 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
+
 package package1;
+
+
+
+import database.DBConnection;
+import java.awt.HeadlessException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -10,13 +20,194 @@ package package1;
  */
 public class Checkout extends javax.swing.JFrame {
     
+    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Checkout.class.getName());
 
     /**
      * Creates new form Checkout
      */
     public Checkout() {
+        
         initComponents();
+         nameLabel.setText(UserSession.name);
+
+    emailLabel.setText(UserSession.email);
+
+    countryLabel.setText(UserSession.country);
+
+    System.out.println(UserSession.name);
+        
+        
+        
+
+    
+
+    double subtotal = 0;
+
+    if(Home.cartFrame.tvCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.tvCartSpinner.getValue();
+
+        subtotal += 214095 * qty;
+    }
+
+    if(Home.cartFrame.toasterCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.toasterCartSpinner.getValue();
+
+        subtotal += 8288 * qty;
+    }
+    if(Home.cartFrame.dispenserCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.dispenserCartSpinner.getValue();
+
+        subtotal += 65000 * qty;
+    }
+    if(Home.cartFrame.juicerCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.juicerCartSpinner.getValue();
+
+        subtotal += 13983 * qty;
+    }
+    if(Home.cartFrame.airfryerCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.airfryerCartSpinner.getValue();
+
+        subtotal += 63999 * qty;
+    }
+    if(Home.cartFrame.lipstickCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.lipstickCartSpinner.getValue();
+
+        subtotal += 1851 * qty;
+    }
+    if(Home.cartFrame.eyeshadowCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.eyeshadowCartSpinner.getValue();
+
+        subtotal += 3500 * qty;
+    }
+    if(Home.cartFrame.concealerCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.concealerCartSpinner.getValue();
+
+        subtotal += 3799 * qty;
+    }
+    if(Home.cartFrame.mascaraCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.mascaraCartSpinner.getValue();
+
+        subtotal += 2700 * qty;
+    }
+    if(Home.cartFrame.perfumeCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.perfumeCartSpinner.getValue();
+
+        subtotal += 4180 * qty;
+    }
+    if(Home.cartFrame.milkCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.milkCartSpinner.getValue();
+
+        subtotal += 380 * qty;
+    }
+    if(Home.cartFrame.yogurtCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.yogurtCartSpinner.getValue();
+
+        subtotal += 270 * qty;
+    }
+    if(Home.cartFrame.breadCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.breadCartSpinner.getValue();
+
+        subtotal += 130 * qty;
+    }
+    if(Home.cartFrame.butterCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.butterCartSpinner.getValue();
+
+        subtotal += 747 * qty;
+    }
+    if(Home.cartFrame.eggsCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.eggsCartSpinner.getValue();
+
+        subtotal += 630 * qty;
+    }
+    if(Home.cartFrame.teaCartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.teaCartSpinner.getValue();
+
+        subtotal += 430 * qty;
+    }
+    if(Home.cartFrame.book1CartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.book1CartSpinner.getValue();
+
+        subtotal += 3195 * qty;
+    }
+    if(Home.cartFrame.book2CartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.book2CartSpinner.getValue();
+
+        subtotal += 1795 * qty;
+    }
+    if(Home.cartFrame.book3CartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.book3CartSpinner.getValue();
+
+        subtotal += 1349 * qty;
+    }
+    if(Home.cartFrame.book4CartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.book4CartSpinner.getValue();
+
+        subtotal += 7015 * qty;
+    }
+    if(Home.cartFrame.book5CartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.book5CartSpinner.getValue();
+
+        subtotal += 1255 * qty;
+    }
+    if(Home.cartFrame.book6CartPanel.isVisible()) {
+
+        int qty =
+        (int) Home.cartFrame.book6CartSpinner.getValue();
+
+        subtotal += 2495 * qty;
+    }
+
+    subtotalLabel.setText(
+    "Rs. " + subtotal);
+
+    double total =
+    subtotal + 200;
+
+    totalLabel.setText(
+    "Rs. " + total);
     }
 
     /**
@@ -38,26 +229,26 @@ public class Checkout extends javax.swing.JFrame {
         jPanelOrderSummary = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabelSubtotal = new javax.swing.JLabel();
+        subtotalLabel = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel20 = new javax.swing.JLabel();
         jLabelShippingCharges = new javax.swing.JLabel();
-        jLabelTotal = new javax.swing.JLabel();
-        jButtonContinueShopping = new javax.swing.JButton();
+        totalLabel = new javax.swing.JLabel();
+        continueBtn = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabelCountry = new javax.swing.JLabel();
+        countryLabel = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabelName = new javax.swing.JLabel();
+        nameLabel = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jTextFieldAddress = new javax.swing.JTextField();
+        addressField = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextFieldCity = new javax.swing.JTextField();
-        jTextFieldPostalcode = new javax.swing.JTextField();
-        jLabelEmail = new javax.swing.JLabel();
+        cityField = new javax.swing.JTextField();
+        postalField = new javax.swing.JTextField();
+        emailLabel = new javax.swing.JLabel();
         jCheckBoxSaveInfo = new javax.swing.JCheckBox();
         jLabel13 = new javax.swing.JLabel();
         jLabelshipping = new javax.swing.JLabel();
@@ -116,43 +307,35 @@ public class Checkout extends javax.swing.JFrame {
         );
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Checkout");
 
         jPanelOrderSummary.setBackground(new java.awt.Color(255, 255, 255));
         jPanelOrderSummary.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Total Bill");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Subtotal:");
 
-        jLabelSubtotal.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabelSubtotal.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelSubtotal.setText("  ");
+        subtotalLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        subtotalLabel.setText("  ");
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Shipping:");
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setText("Total:");
 
         jLabelShippingCharges.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabelShippingCharges.setForeground(new java.awt.Color(0, 0, 0));
         jLabelShippingCharges.setText("Rs.200");
 
-        jLabelTotal.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabelTotal.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelTotal.setText(" ");
+        totalLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        totalLabel.setText(" ");
 
-        jButtonContinueShopping.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButtonContinueShopping.setForeground(new java.awt.Color(0, 0, 0));
-        jButtonContinueShopping.setText("Continue shopping");
+        continueBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        continueBtn.setText("Continue shopping");
+        continueBtn.addActionListener(this::continueBtnActionPerformed);
 
         javax.swing.GroupLayout jPanelOrderSummaryLayout = new javax.swing.GroupLayout(jPanelOrderSummary);
         jPanelOrderSummary.setLayout(jPanelOrderSummaryLayout);
@@ -160,13 +343,13 @@ public class Checkout extends javax.swing.JFrame {
             jPanelOrderSummaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelOrderSummaryLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabelSubtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(subtotalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28))
             .addGroup(jPanelOrderSummaryLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jPanelOrderSummaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabelShippingCharges)
-                    .addComponent(jLabelTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanelOrderSummaryLayout.createSequentialGroup()
@@ -177,7 +360,7 @@ public class Checkout extends javax.swing.JFrame {
                             .addComponent(jLabel4)
                             .addComponent(jLabel7)
                             .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonContinueShopping, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(continueBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanelOrderSummaryLayout.createSequentialGroup()
                         .addGap(106, 106, 106)
                         .addComponent(jLabel3)))
@@ -191,7 +374,7 @@ public class Checkout extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanelOrderSummaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jLabelSubtotal))
+                    .addComponent(subtotalLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanelOrderSummaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
@@ -201,106 +384,84 @@ public class Checkout extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelOrderSummaryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
-                    .addComponent(jLabelTotal))
+                    .addComponent(totalLabel))
                 .addGap(18, 18, 18)
-                .addComponent(jButtonContinueShopping, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(continueBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
         );
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Contact");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Delivery");
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Country");
 
-        jLabelCountry.setText(" ");
-        jLabelCountry.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        countryLabel.setText(" ");
+        countryLabel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Name");
 
-        jLabelName.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabelName.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelName.setText(" ");
-        jLabelName.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        nameLabel.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        nameLabel.setText(" ");
+        nameLabel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Address");
 
-        jTextFieldAddress.setBackground(new java.awt.Color(255, 255, 255));
-        jTextFieldAddress.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jTextFieldAddress.setForeground(new java.awt.Color(0, 0, 0));
-        jTextFieldAddress.setText(" ");
-        jTextFieldAddress.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jTextFieldAddress.addActionListener(this::jTextFieldAddressActionPerformed);
+        addressField.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        addressField.setText(" ");
+        addressField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        addressField.addActionListener(this::addressFieldActionPerformed);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("City");
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Postal Code");
 
-        jTextFieldCity.setBackground(new java.awt.Color(255, 255, 255));
-        jTextFieldCity.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jTextFieldCity.setForeground(new java.awt.Color(0, 0, 0));
-        jTextFieldCity.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        cityField.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        cityField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
-        jTextFieldPostalcode.setBackground(new java.awt.Color(255, 255, 255));
-        jTextFieldPostalcode.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jTextFieldPostalcode.setForeground(new java.awt.Color(0, 0, 0));
-        jTextFieldPostalcode.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jTextFieldPostalcode.addActionListener(this::jTextFieldPostalcodeActionPerformed);
+        postalField.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        postalField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        postalField.addActionListener(this::postalFieldActionPerformed);
 
-        jLabelEmail.setBackground(new java.awt.Color(255, 255, 255));
-        jLabelEmail.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabelEmail.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelEmail.setText(" ");
-        jLabelEmail.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        emailLabel.setBackground(new java.awt.Color(255, 255, 255));
+        emailLabel.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        emailLabel.setText(" ");
+        emailLabel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jCheckBoxSaveInfo.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBoxSaveInfo.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jCheckBoxSaveInfo.setForeground(new java.awt.Color(0, 0, 0));
         jCheckBoxSaveInfo.setText("Save this Information for next time");
         jCheckBoxSaveInfo.addActionListener(this::jCheckBoxSaveInfoActionPerformed);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setText("Shippping Method");
 
         jLabelshipping.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabelshipping.setForeground(new java.awt.Color(0, 0, 0));
         jLabelshipping.setText(" Standard                                                                Rs 200.00");
         jLabelshipping.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel15.setBackground(new java.awt.Color(255, 255, 255));
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("Payment");
 
         jLabel16.setForeground(new java.awt.Color(102, 102, 102));
         jLabel16.setText("All transactions are secure and encrypted");
 
         jLabelCOD.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabelCOD.setForeground(new java.awt.Color(0, 0, 0));
         jLabelCOD.setText(" Cash on Delivery (COD)");
         jLabelCOD.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
         jLabel18.setText("Billing Address");
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setText(" Same as Shipping Address");
         jLabel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
@@ -308,6 +469,7 @@ public class Checkout extends javax.swing.JFrame {
         jButtonConfirmOrder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButtonConfirmOrder.setForeground(new java.awt.Color(255, 255, 255));
         jButtonConfirmOrder.setText("Confirm Order");
+        jButtonConfirmOrder.addActionListener(this::jButtonConfirmOrderActionPerformed);
 
         javax.swing.GroupLayout jPanelMainLayout = new javax.swing.GroupLayout(jPanelMain);
         jPanelMain.setLayout(jPanelMainLayout);
@@ -330,22 +492,22 @@ public class Checkout extends javax.swing.JFrame {
                                 .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabelCOD, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabelshipping, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
-                                .addComponent(jTextFieldAddress, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(addressField, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabelCountry, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(countryLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabelName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabelEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(nameLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(emailLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanelMainLayout.createSequentialGroup()
                                     .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jTextFieldCity, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cityField, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel12)
-                                        .addComponent(jTextFieldPostalcode, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(postalField, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(jLabel10))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                         .addComponent(jPanelOrderSummary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -377,29 +539,29 @@ public class Checkout extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel5)
                         .addGap(10, 10, 10)
-                        .addComponent(jLabelEmail)
+                        .addComponent(emailLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabelCountry)
+                        .addComponent(countryLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabelName)
+                        .addComponent(nameLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel10)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextFieldAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(addressField, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(jLabel11))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldPostalcode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFieldCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(postalField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cityField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxSaveInfo)
                 .addGap(18, 18, 18)
@@ -435,17 +597,91 @@ public class Checkout extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextFieldPostalcodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldPostalcodeActionPerformed
+    private void postalFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_postalFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldPostalcodeActionPerformed
+    }//GEN-LAST:event_postalFieldActionPerformed
 
     private void jCheckBoxSaveInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxSaveInfoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBoxSaveInfoActionPerformed
 
-    private void jTextFieldAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldAddressActionPerformed
+    private void addressFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldAddressActionPerformed
+    }//GEN-LAST:event_addressFieldActionPerformed
+
+    private void continueBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_continueBtnActionPerformed
+        // TODO add your handling code here:
+        
+
+Home home =
+new Home();
+
+home.setVisible(true);
+
+dispose();
+    }//GEN-LAST:event_continueBtnActionPerformed
+
+    private void jButtonConfirmOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConfirmOrderActionPerformed
+        // TODO add your handling code here:
+        try {
+
+    Connection con =
+    DBConnection.getConnection();
+
+    String sql =
+    "INSERT INTO orders(customername,email,country,totalcost,address,city,postalcode,paymentmethod) VALUES(?,?,?,?,?,?,?,?)";
+
+    PreparedStatement pst =
+    con.prepareStatement(sql);
+
+    pst.setString(1,
+    UserSession.name);
+
+    pst.setString(2,
+    UserSession.email);
+
+    pst.setString(3,
+    UserSession.country);
+
+    String totalText =
+    totalLabel.getText();
+
+    totalText =
+    totalText.replace("Rs. ","");
+
+    double total =
+    Double.parseDouble(totalText);
+
+    pst.setDouble(4,
+    total);
+
+    pst.setString(5,
+    addressField.getText());
+
+    pst.setString(6,
+    cityField.getText());
+
+    pst.setString(7,
+    postalField.getText());
+
+    pst.setString(8,
+    "Cash On Delivery");
+
+    pst.executeUpdate();
+
+    JOptionPane.showMessageDialog(
+    this,
+    "Order Placed Successfully");
+
+} catch(HeadlessException | NumberFormatException | SQLException e) {
+
+    JOptionPane.showMessageDialog(
+    this,
+    e);
+}
+        
+        
+    }//GEN-LAST:event_jButtonConfirmOrderActionPerformed
 
     /**
      * @param args the command line arguments
@@ -473,8 +709,12 @@ public class Checkout extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField addressField;
+    private javax.swing.JTextField cityField;
+    private javax.swing.JButton continueBtn;
+    private javax.swing.JLabel countryLabel;
+    private javax.swing.JLabel emailLabel;
     private javax.swing.JButton jButtonConfirmOrder;
-    private javax.swing.JButton jButtonContinueShopping;
     private javax.swing.JCheckBox jCheckBoxSaveInfo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -496,12 +736,7 @@ public class Checkout extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelCOD;
-    private javax.swing.JLabel jLabelCountry;
-    private javax.swing.JLabel jLabelEmail;
-    private javax.swing.JLabel jLabelName;
     private javax.swing.JLabel jLabelShippingCharges;
-    private javax.swing.JLabel jLabelSubtotal;
-    private javax.swing.JLabel jLabelTotal;
     private javax.swing.JLabel jLabelUsericon;
     private javax.swing.JLabel jLabelordifyLogo;
     private javax.swing.JLabel jLabelshipping;
@@ -509,8 +744,9 @@ public class Checkout extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelMain;
     private javax.swing.JPanel jPanelOrderSummary;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextFieldAddress;
-    private javax.swing.JTextField jTextFieldCity;
-    private javax.swing.JTextField jTextFieldPostalcode;
+    private javax.swing.JLabel nameLabel;
+    private javax.swing.JTextField postalField;
+    private javax.swing.JLabel subtotalLabel;
+    private javax.swing.JLabel totalLabel;
     // End of variables declaration//GEN-END:variables
 }
