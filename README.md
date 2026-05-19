@@ -9,7 +9,11 @@ ORDIFY is a complete, feature-rich Java Swing desktop application designed to st
 * **Dynamic Dashboard:** Categorized product listings (Home Appliances, Beauty Products, Food Items, Books) using an elegant `CardLayout` architecture.
 * **Shopping Cart System:** Add/remove items dynamically, live-update quantity pickers (`JSpinner`), and see real-time subtotal math.
 * **Sleek Checkout Workflow:** Interactive shipping entries, toggleable billing preferences, multiple payment channel integrations, and automated order placement.
----
+
+##  Key Object-Oriented Design Principles (OOP)
+* **Encapsulation:** Product parameters, prices, and customer data are fully wrapped inside distinct data objects using precise getter/setter validation structures.
+* **Inheritance & Polymorphism:** Component frames share base definitions for user profiles and specific checkout steps to avoid code duplication.
+* **Abstraction:** Database connection operations and data fetches are separated safely from front-end layout elements.
 
 ##  Technology Stack
 
@@ -18,12 +22,3 @@ ORDIFY is a complete, feature-rich Java Swing desktop application designed to st
 * **Database:** Microsoft Access (`.accdb`)
 * **Database Connectivity:** JDBC API with **UCanAccess Driver** (Pure Java JDBC driver implementation for Access files)
 * **Development IDE:** Apache NetBeans
-
----
-
-##  Key Object-Oriented Design Principles (OOP)
-* **Encapsulation:** Product parameters, prices, and customer data are fully wrapped inside distinct data objects using precise getter/setter validation structures.
-* **Inheritance & Polymorphism:** Component frames share base definitions for user profiles and specific checkout steps to avoid code duplication.
-* **Abstraction:** Database connection operations and data fetches are separated safely from front-end layout elements.
-
----
